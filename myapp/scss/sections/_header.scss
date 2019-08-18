@@ -184,7 +184,6 @@ header {
         &:nth-child(1) {
             background: #F8F8F8;
             border-color:  #E8E8E8;
-            border-color: red;
             border-width: 1px;
             width: 11px;
             height: 11px;
@@ -201,6 +200,9 @@ header {
         &:nth-child(5) {
             background: $color-red;
         }
+        &:nth-child(6) {
+            background: #E8E8E8;;
+        }
         &:hover {
             transform: scale(2);
         }
@@ -214,10 +216,10 @@ header {
 .scroll {
     position: absolute;
     bottom: 105px;
-    right: 0;
+    right: -122px;
     font-size: 14px;
     color: #545454;
-    padding: 30px 30px 32px 107px;
+    padding: 12px 30px 12px 107px;
     transform: rotate(-90deg);
     &:before {
         content: "";

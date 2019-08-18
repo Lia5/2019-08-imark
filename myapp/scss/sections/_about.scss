@@ -1,3 +1,30 @@
 .about {
+    background: #131313;
+    color: #ffffff;
+    padding: 150px 0 294px;
+    .wrap {
+        display: flex;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 40px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        span {
+            display: block;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 60px;
+        }
+    }
 
+    &__body {
+        width: 40%;
+    }
+    &__img {
+        width: 60%;
+        img {
+            width: 100%;
+        }
+    }
 }
