@@ -12,8 +12,42 @@ $(function() {
 
 
 
-
-
+/*map*/
+    function initMap() {
+        var centerLatLng = new google.maps.LatLng( 50.445573, 30.495504);
+        var mapOptions = {
+            center: centerLatLng,
+            zoom: 16,               // Зум по умолчанию. Возможные значения от 0 до 21
+            navigationControlOptions: {
+            style: google.maps.NavigationControlStyle.SMALL
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        map.scrollwheel=true;
+        map.setOptions({ mapTypeControl:true});
+        var locations = [
+            {
+                title: 'iMARK',
+                position: {lat: 50.445573, lng: 30.495504},
+                icon: {
+                    url: "img/icons/marker.svg",
+                    scaledSize: new google.maps.Size(40, 47)
+                }
+            }
+        ];
+        locations.forEach( function( element ) {
+            var marker = new google.maps.Marker({
+                position: element.position,
+                map: map,
+                title: element.title,
+                icon: element.icon,
+            });
+        });
+       
+    }
+    google.maps.event.addDomListener(window, "load", initMap);
+   
 
 });
 

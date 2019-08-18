@@ -1,36 +1,47 @@
 .footer {
-    padding: 159px 50px 59px;
+    padding: 94px 56px 68px;
+    background: #131313;
+    color: #ffffff;
     .wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    &__logo {
-        font-size: 25px;
-        // font-family: $title-font;
-        letter-spacing: 8px;
-        text-transform: uppercase;
-    }
-    &__menu {
-        font-size: 12px;
-        text-transform: uppercase;
-        ul {
-            display: flex;
-            justify-content: center;
-            white-space: nowrap;
-    
+    &__left {
+        display: flex;
+        align-items: center;
+        .logo {
+            margin-right: 20px;
         }
-        a {
-            display: block;
-            padding: 20px;
+    }
+    .contacts__tel {
+        color: #FCFCFC;
+        font-size: 14px;
+        line-height: 2.14;
+        font-weight: 700;
+        &:hover {
+            &:after {
+                border-color: #fcfcfc;
+            }
+        }
+    }
+    &__develop {
+        display: flex;
+        align-items: center;
+        color: #c4c4c4;
+        font-size: 12px;
+        line-height: 30px;
+        
+        &-name {
+            margin-left: 10px;
+            color: #ffffff;
         }
     }
 }
 .rights {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.21;
-    color: #646464;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #C4C4C4;
 }
 .social {
     display: flex;
@@ -38,11 +49,15 @@
         display: block;
         padding: 20px 33px;
         &:hover svg {
-            fill: #fdac5c;
+            fill: $color-yellow;
+        }
+        &:hover {
+            transform: scale(1.2);
         }
     }
     svg {
-        fill: #000;
+        fill: #FCFCFC;
+        transition: 0.3s;
     }
 
 }
