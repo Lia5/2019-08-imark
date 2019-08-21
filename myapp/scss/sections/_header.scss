@@ -83,6 +83,9 @@ header {
     flex-direction: column;
     min-height: 450px;
     height: 100vh;
+    min-height: 900px;
+    overflow: hidden;
+    position: relative;
 }
 .header {
     position: relative;
@@ -100,16 +103,21 @@ header {
         font-size: 48px;
         line-height: 1.35;
         color: #131313;
+        padding-left: 115px;
+        margin: 0;
         span {
             font-size: 60px;
-            line-height: 1.5;
+            line-height: 1.6;
+           
+            
             display: block;
+            text-transform: uppercase;
         }
         &:before {
             content: "";
             position: absolute;
-            left: -186px;
-            top: 0;
+            left: -135px;
+            top: -38px;
             width: 150px;
             height: 306px;
             background-image: url('../img/dots-bg.svg');
@@ -118,8 +126,14 @@ header {
             background-position: center center;
         }
     }
+    .lines {
+        margin: 0 auto;
+    }
 }
-
+.main-submenu.mobile,
+.mobile {
+    display: none;
+}
 
 .toggle-menu {
     display: none;
@@ -157,18 +171,18 @@ header {
     }
     &-two {
         background: $color-yellow;
-        height: 70%;
+        height: 60%;
         top: 15%;
     }
     &-three {
         background: $color-red;
-        height: 40%;
+        height: 30%;
         top: 0;
     }
 }
 .nav-dots {
     position: fixed;
-    right: 20px;
+    right: 50px;
     top: 50%;
     transform: translate(0, -50%);
     
@@ -179,7 +193,7 @@ header {
         margin: 0 auto 20px;
         transition: 0.3s;
         background: #F8F8F8;
-        border: 5px solid transparent;
+        border: 3px solid transparent;
         cursor: pointer;
         &:nth-child(1) {
             background: #F8F8F8;
@@ -216,7 +230,7 @@ header {
 .scroll {
     position: absolute;
     bottom: 105px;
-    right: -122px;
+    right: -88px;
     font-size: 14px;
     color: #545454;
     padding: 12px 30px 12px 107px;

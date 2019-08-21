@@ -20,7 +20,6 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.67;
-	letter-spacing: 1px;
 	font-family: $montserrat;
 	font-weight: 400;
 	overflow-x: hidden;
@@ -54,8 +53,9 @@ b, strong {
 	font-weight: bold;
 }
 .wrap {
-	max-width: 1650px;
+	max-width: 1690px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 a {
 	text-decoration: none;
@@ -86,7 +86,10 @@ ul,li {
 }
 .primary-text {
 	font-size: 18px;
-	line-height: 30px
+	line-height: 30px;
+	p {
+		margin: 0 0 28px 0;
+	}
 }
 .subtitle {
 	font-size: 20px;
@@ -98,6 +101,7 @@ ul,li {
 	font-size: 48px;
 	line-height: 100px;
 	color: #131313;
+	margin: 0 0 25px 0;
 }
 .mark-btn {
 	font-family: $rubik;
@@ -107,7 +111,7 @@ ul,li {
 	position: relative;
 	display: inline-block;
 	text-transform: uppercase;
-	padding: 18px;
+    padding: 18px 38px 18px 18px;
 	transition: 0.5s;
 	cursor: pointer;
 	background: transparent;

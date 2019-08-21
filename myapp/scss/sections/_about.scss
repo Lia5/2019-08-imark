@@ -1,11 +1,13 @@
 .about {
     background: #131313;
     color: #ffffff;
-    padding: 150px 0 294px;
+    padding: 214px 0 273px;
     .wrap {
         display: flex;
     }
     &__title {
+        position: relative;
+        margin: 0 0 48px 0;
         color: #ffffff;
         font-size: 40px;
         line-height: 1.5;
@@ -14,17 +16,74 @@
             display: block;
             font-weight: 700;
             font-size: 64px;
-            line-height: 60px;
+            line-height: 70px;
         }
     }
 
     &__body {
         width: 40%;
+        padding-top: 96px;
+    }
+    &__chart {
+        width: 60%;
     }
     &__img {
-        width: 60%;
+        width: 87%;
+        margin-left: auto;
+        margin-right: 10%;
         img {
             width: 100%;
         }
+    }
+    &__arrows {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.arrow {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-top: 14px solid $color-blue;
+    border-right: 14px solid $color-blue;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -93%;
+        left: -70%;
+        width: 150%;
+        height: 150%;
+        border-bottom: 14px solid $color-blue;
+        transform: rotate(-45deg);
+    }
+    &--blue {
+        top: -164px;
+        right: 160px;
+    }
+    &--red {
+        top: -228px;
+        right: 310px;
+        width: 60px;
+        height: 60px;
+        border-width: 9px;
+        border-color: $color-red;
+           &:before { 
+              border-width: 9px;
+              border-color: $color-red;
+           }
+    }
+    &--yellow {
+        top: -178px;
+        right: 239px;
+        width: 30px;
+        height: 30px;
+        border-width: 5px;
+        border-color: $color-yellow;
+           &:before { 
+              border-width: 5px;
+              border-color: $color-yellow;
+           }
     }
 }
