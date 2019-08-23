@@ -66,7 +66,7 @@
 @media only screen and (max-width: 1495px) {
     .header {
         .wrap {
-            flex-direction: column-reverse;
+            justify-content: space-around;
         }
         h1 {
             max-width: 70%;
@@ -101,9 +101,9 @@
     }
 }
 @media only screen and (max-width: 1240px) {
-    .header h1 {
-        max-width: none;
-    }
+    // .header h1 {
+    //     max-width: none;
+    // }
     .contacts__tel-wrap {
         flex-wrap: wrap;
         &:before {
@@ -120,6 +120,9 @@
   
 }
 @media only screen and (max-width: 980px) {
+    .wrap {
+        padding: 0 80px;
+    }
     .main-submenu.mobile,
     .mobile {
         display: block;
@@ -159,13 +162,6 @@
 
         
     }
-
-
-
-
-
-
-
     .main-menu {
         position: absolute;
         transform: translateX(200%);
@@ -256,29 +252,34 @@
             }         
         }
     }
-    .header h1 {
-        padding-left: 104px;
-        font-size: 30px;
-        line-height: 48px;
-        span {
-            font-size: 50px;
-            line-height: 70px;
-        }
-        &:before {
-            left: -104px;
-            top: -24px;
-            background-size: 100%;
-        }
-    }
     header {
         padding: 27px 24px 19px 17px;
-        min-height: 1023px;
+        // min-height: 1023px;
     }
     .header {
         align-items: flex-start;
-    }
-    .header .lines {
-        margin: 133px 10px 64px 107px;
+        .wrap {
+            flex-direction: column-reverse;
+            justify-content: center;
+            height: 100%;
+        }
+        h1 {
+            padding-left: 44px;
+            font-size: 30px;
+            line-height: 48px;
+            span {
+                font-size: 50px;
+                line-height: 70px;
+            }
+            &:before {
+                left: -157px;
+                top: -24px;
+                background-size: 100%; 
+            }
+        }
+        .lines {
+            margin: 0 10px 64px 46px;
+        }
     }
     .lines {
         width: 84px;
@@ -287,6 +288,280 @@
     .line {
         width: 18px;
     }
+    .nav-dots {
+        right: 28px;
+
+    }
+    .about {
+        .wrap {
+            flex-direction: column;
+        }
+        &__body {
+            padding-top: 32px;
+            width: 100%;
+        }
+        &__chart {
+         
+            width: 100%;
+        }
+        &__arrows {
+            right: auto;
+            left: 98px;
+            top: -147px;
+        }
+        &__img {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 14px;
+        }
+    }
+    .arrow {
+        border-width: 10px;
+        width: 60px;
+        height: 60px;
+        &--red {
+            top: -44px;
+            right: 98px;
+            width: 40px;
+            height: 40px;
+            border-width: 7px;
+        }
+        &--yellow {
+            top: -10px;
+            right: 50px;
+            width: 20px;
+            height: 20px;
+            border-width: 4px;
+        }
+
+    }
+    .directions {
+        margin-bottom: 0;
+        &__item {
+            .wrap {
+                flex-direction: column;
+            }
+        }
+        &__block {
+            width: 100%;
+        }
+    }
+    .individual {
+        &__block {
+            max-width: none;
+            margin-top: 233px;
+        }
+        &__img {
+            margin-top: 104px;
+            max-width: 91%;
+            margin-left: 0;
+            &:before {
+                top: -226px;
+                height: 860px;
+            }
+        }
+        &__icon {
+            width: 63px;
+            height: 67px;
+            right: 70px;
+            bottom: -342px;
+            top: auto;
+            transition: none;
+            .individual__icon .line {
+                width: 13px;
+            }
+        }
+
+    }
+    .industrial {
+
+        padding-top: 62px;
+        padding-bottom: 0;
+        .wrap {
+            flex-direction: column-reverse;
+        }
+        &__img {
+            max-width: 91%;
+            margin-left: 0;
+            &:before {
+                right: -23%;
+                top: -35%;
+                height: 154%;
+            }
+
+        }
+        &__dot-top {
+            right: -18%;
+            top: -15%;
+        }
+        &__dot-bottom {
+            background-size: 100%;
+            width: 66px;
+            height: 66px;
+            bottom: -11%;
+            right: -14%;
+        }
+        &__block {
+            margin-top: 184px;
+            max-width: none;
+        }
+        &__icon {
+            left: auto;
+            right: 20%;
+            top: auto;
+            transition: none;
+            bottom: -42%;
+            width: 63px;
+            height: 53px;
+            .line {
+                top: auto;
+                left: 0;
+                height: 9px;
+                &-two, &-three {
+                    width: 49px;
+                }
+            }
+        }
+    }
+    .financial {
+        padding-top: 95px;
+        padding-bottom: 111px;
+        overflow-x: hidden;
+        .directions__block {
+            z-index: 2;
+
+        }
+        .financial__block {
+            z-index: 1;
+        }
+        &:before {
+            content: none;
+        }
+        &:after {
+            top: 187px;
+            height: 78%;
+        }
+        &__img {
+            max-width: none;
+            width: 100%;
+            width: calc(111% + 50px);
+            position: relative;
+            right: -30px;
+            margin-top: 0;
+            &:before {
+                content: none;
+            }
+            &:after {
+                bottom: -138px;
+                left: 17%;
+            }
+        }
+        &__dot-top {
+            top: auto;
+            bottom: -23%;
+            right: auto;
+            left: 13%;
+        }
+        &__dot-bottom {
+            bottom: -12%;
+            left: 80%;
+        }
+        &__block {
+            padding-top: 60px;
+            margin-top: 38%;
+            margin-right: 0;
+            max-width: none;
+            width: 87%;
+            position: relative;
+            z-index: 1;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -80px;
+                width: 135%;
+                height: 116%;
+                background: #F2F2F2;
+                z-index: -1;
+            }
+        }
+        &__icon {
+            bottom: -61%;
+            right: 29%;
+            width: 65px;
+            height: 80px;
+            .line {
+                width: 13px;
+            }
+        }
+    }
+    .contacts {
+        padding-top: 0;
+        &__body {
+            flex-wrap: wrap;
+        }
+        &__info {
+            width: 100%;
+            margin-top: 50px;
+            padding-left: 0;
+        }
+        &__img {
+            width: 100%;
+            margin-top: 69px;
+            z-index: 1;
+            &--left {
+                width: 74%;
+            }
+            &--right {
+                top: -50%;
+                width: 48%;
+                right: -11%;
+            }
+        }
+        &__tel-wrap {
+            flex-direction: column;
+        }
+        &__adress {
+            max-width: 300px;
+            margin-bottom: 29px;
+        }
+        &__map {
+            top: -80px;
+            width: calc(100% + 160px);
+            margin-left: -80px;
+        }
+    }
+    .footer {
+        padding: 24px 0 30px;
+        &__left {
+            position: absolute;
+            left: 39px;
+            top: 0;
+            align-items: flex-start;
+            flex-direction: column;
+            flex-grow: 0;
+            order: -2;
+            max-width: 180px;
+        }
+        .wrap {
+            position: relative;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 48px;
+            align-items: flex-end;
+        }
+        .social {
+            order: -1;
+            margin-right: -17px;
+        }
+        .contacts__tel {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
 }
 @media only screen and (max-width: 767px) {
    
