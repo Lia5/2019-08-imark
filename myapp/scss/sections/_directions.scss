@@ -131,6 +131,7 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
+        animation: animScale1 3s infinite linear;
         .line {
             width: 15px;
             background: $color-red;
@@ -168,7 +169,7 @@
         max-width: 546px;
         margin-left: 10%;
         z-index: 1;
-        transition: 0.3s;
+        transition: 1.3s;
         img {
             width: 100%;
             box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
@@ -267,12 +268,15 @@
             background: $color-yellow;
             &-one {
                 width: 100%;
+                animation: animLine1 3s infinite linear;
             }
             &-two {
                 width: 70px;
+                animation: animLine2 8s infinite linear;
             }
             &-three {
                 width: 70px;
+                animation: animLine2 5s infinite linear;
             }
         }
 
@@ -318,7 +322,7 @@
         margin-left: auto;
         margin-top: 120px;
         z-index: 1;
-        transition: 0.3s;
+        transition: 1.3s;
         img {
             width: 100%;
             box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
@@ -417,6 +421,7 @@
         height: 90px;
         display: flex;
         justify-content: space-between;
+        animation: animScale1 3s infinite linear;
         .line {
             width: 15px;
             background: $color-blue;

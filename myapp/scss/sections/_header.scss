@@ -315,27 +315,3 @@ header {
     }
 }
 //header
-@keyframes animationScroll {
-    0% {
-        left: 0;
-    }
-    50% {
-        left: 5px;
-    }
-    100% {
-        left: 0;
-    }
-}
-@keyframes animLines {
-    0% {
-        height: 0;
-        top: 50%;
-    }
-    50% {
-        top: 10%;
-        height: 50%;
-    }
-    100% {
-        top: -100%;
-    }
-}
