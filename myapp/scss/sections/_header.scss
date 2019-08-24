@@ -153,6 +153,17 @@ header {
     .lines {
         margin: 0 auto;
     }
+    .line {
+        &-one {
+            animation: animLines 4.5s linear infinite;
+        }
+        &-two {
+            animation: animLines 5.5s linear infinite;
+        }
+        &-three {
+            animation: animLines 3.5s linear infinite;
+        }
+    }
 
 }
 .logo {
@@ -204,19 +215,16 @@ header {
     width: 30px;
     position: relative;
     &-one {
-        animation: animLines 4.5s linear infinite;
         background: $color-blue;
         height: 40%;
         top: 60%
     }
     &-two {
-        animation: animLines 5.5s linear infinite;
         background: $color-yellow;
         height: 60%;
         top: 15%;
     }
     &-three {
-        animation: animLines 3.5s linear infinite;
         background: $color-red;
         height: 30%;
         top: 0;

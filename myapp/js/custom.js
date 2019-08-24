@@ -69,9 +69,6 @@ $(function() {
             if (dataName=="main") {
                 var posit = $(this).offset().top - 10000;
             }
-            if (dataName=="aboutanim") {
-                var posit = $(this).offset().top - 400;
-            }
 
 
             // if ( window.innerWidth < 1341 || window.screen.width < 1341) {

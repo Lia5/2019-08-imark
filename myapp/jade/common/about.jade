@@ -1,6 +1,6 @@
 section.about#about
     .wrap
-        .about__body
+        .about__body(data-anim="aboutanim")
             h2.about__title 
                 span iMark 
                 | агентство маркетинга
@@ -10,5 +10,9 @@ section.about#about
                     .arrow.arrow--yellow(data-anim="aboutanim")
             .about__text iMark, marketing agency — единственное в Украине специализированное агентство  маркетинга. Агентство создано осенью 2013 года. Его создали практики страхового рынка: решили стать теми самыми подрядчиками, которых так не хватало им самим.
         .about__chart
-            .about__img
-                img(src="img/chart.svg", alt="chart")
+            .about__img.chart
+                img(src="img/chart/chart.svg", alt="chart")
+                .chart__lines
+                    .chart__line.chart__line--blue
+                    .chart__line.chart__line--yellow
+                    .chart__line.chart__line--red

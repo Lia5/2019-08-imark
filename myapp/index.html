@@ -75,7 +75,7 @@
     </header>
     <section id="about" class="about">
       <div class="wrap">
-        <div class="about__body">
+        <div data-anim="aboutanim" class="about__body">
           <h2 class="about__title"> <span>iMark </span>агентство маркетинга
             <div class="about__arrows">
               <div data-anim="aboutanim" class="arrow arrow--blue"></div>
@@ -86,7 +86,13 @@
           <div class="about__text">iMark, marketing agency — единственное в Украине специализированное агентство  маркетинга. Агентство создано осенью 2013 года. Его создали практики страхового рынка: решили стать теми самыми подрядчиками, которых так не хватало им самим.</div>
         </div>
         <div class="about__chart">
-          <div class="about__img"><img src="img/chart.svg" alt="chart"></div>
+          <div class="about__img chart"><img src="img/chart/chart.svg" alt="chart">
+            <div class="chart__lines">
+              <div class="chart__line chart__line--blue"></div>
+              <div class="chart__line chart__line--yellow"></div>
+              <div class="chart__line chart__line--red"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -94,7 +100,7 @@
       <div id="individual" class="directions__item individual">
         <div class="wrap">
           <div class="directions__block">
-            <div class="individual__img"><img src="img/indiv-bg.jpg" alt="individual">
+            <div data-anim="directionanim1" class="individual__img"><img src="img/indiv-bg.jpg" alt="individual">
               <div class="individual__dot-top"></div>
               <div class="individual__dot-bottom"></div>
               <div class="individual__icon">
@@ -104,7 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="directions__block individual__block">
+          <div data-anim="directionanim2" class="directions__block individual__block">
             <h2 class="title">Individual</h2>
             <div class="primary-text"> 
               <p>Психологи утверждают, что 95% успеха в отношениях зависят от желания и умения понять другую сторону. Отношения страховщика и страхователя - не исключение. </p>
@@ -115,7 +121,7 @@
       </div>
       <div id="industrial" class="directions__item industrial">
         <div class="wrap">
-          <div class="directions__block industrial__block">
+          <div data-anim="directionanim3" class="directions__block industrial__block">
             <h2 class="title">Industrial</h2>
             <div class="primary-text"> 
               <p>В информационных системах страховщиков много полезной и практичной, но, к сожалению, неочевидной информации. </p>
@@ -123,7 +129,7 @@
             </div><a href="#" class="mark-btn"> <span>Подробнее</span></a>
           </div>
           <div class="directions__block">
-            <div class="industrial__img"><img src="img/indust-bg.jpg" alt="industrial">
+            <div data-anim="directionanim4" class="industrial__img"><img src="img/indust-bg.jpg" alt="industrial">
               <div class="industrial__dot-top"></div>
               <div class="industrial__dot-bottom"></div>
               <div class="industrial__icon">
@@ -138,7 +144,7 @@
       <div id="financial" class="directions__item financial">
         <div class="wrap">
           <div class="directions__block">
-            <div class="financial__img"><img src="img/fin-bg.jpg" alt="financial">
+            <div data-anim="directionanim5" class="financial__img"><img src="img/fin-bg.jpg" alt="financial">
               <div class="financial__dot-top"></div>
               <div class="financial__dot-bottom"></div>
               <div class="financial__icon">
@@ -148,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="directions__block financial__block">
+          <div data-anim="directionanim6" class="directions__block financial__block">
             <h2 class="title">Financial</h2>
             <div class="primary-text"> 
               <p>Для нас, как и для наших Клиентов, аналитика и исследования – не самоцель. Это инструмент, который помогает разработать эффективные механики и форматы коммуникации с потребителем. </p>
@@ -161,7 +167,7 @@
     <section id="contacts" class="contacts">
       <div class="wrap">
         <div class="contacts__body">
-          <div class="contacts__info">
+          <div data-anim="contactanim" class="contacts__info">
             <h2 class="title">Наши контакты</h2>
             <div class="contacts__adress">Киев, ул. Саксаганского, д. 120, коворкинг BiblioТech </div>
             <div class="contacts__tel-wrap"> <a href="tel:+380442746540" class="contacts__tel">+38 (044) 274 65 40 </a><a href="tel:+380663255301" class="contacts__tel">+38 (066) 325 53 01 </a></div>
