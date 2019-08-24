@@ -10,7 +10,20 @@ $(function() {
         $(".lang__wrap").removeClass("active");
     }); 
 
-
+    $(".nav-dots a").click(function (e){
+        e.preventDefault();
+        var $div = $(this).data('div');
+        $('html, body').animate({
+            scrollTop: $($div).offset().top
+        }, 1000);
+    });
+    $(".scroll").click(function (e){
+        e.preventDefault();
+        var $div = $(this).data('div');
+        $('html, body').animate({
+            scrollTop: $($div).offset().top
+        }, 1000);
+    });
 
 /*map*/
     function initMap() {
@@ -49,6 +62,46 @@ $(function() {
     google.maps.event.addDomListener(window, "load", initMap);
    
 
+	function AnimActive() {
+		$('*[data-anim]').each(function(e) {
+			var dataName = $(this).attr('data-anim');
+            var posit = $(this).offset().top - 400;
+            if (dataName=="main") {
+                var posit = $(this).offset().top - 10000;
+            }
+            if (dataName=="aboutanim") {
+                var posit = $(this).offset().top - 400;
+            }
+
+
+            // if ( window.innerWidth < 1341 || window.screen.width < 1341) {
+            //     var posit = $(this).offset().top - 1000;
+            //     if (dataName=="bioanim3") {
+            //         var posit = $(this).offset().top - 800;
+            //     }
+            // }
+
+			var windowPostition = $(window).scrollTop();
+
+			if (windowPostition >= posit) {
+				$('*[data-anim="'+ dataName + '"]').removeClass('anim');
+				$('[data-anim="'+ dataName + '"]').addClass('anim');
+			} else {
+
+            }
+
+		});
+	};
+
+	AnimActive();
+	$(window).scroll(function() {
+		AnimActive();
+	});
+
+	$(window).resize(function() {
+		AnimActive();
+	});
+
 });
 
 
@@ -61,6 +114,8 @@ document.addEventListener('DOMContentLoaded', function(){
         nav.classList.toggle('active');
         var navGamb = document.querySelector('.menu-toggle');
         navGamb.classList.toggle('active');
+        var navBody = document.querySelector('body');
+        navBody.classList.toggle('activenav');
     });
 //tabs
 	// store tabs variable

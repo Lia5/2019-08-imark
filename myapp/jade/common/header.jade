@@ -1,7 +1,7 @@
-header
+header#main
 	nav
-		.logo
-			.logo__icon
+		.logo(data-anim="headeranim")
+			a(href="index.html").logo__icon
 				img(src="img/logo.png", alt="logo")
 		.nav
 			.menu-wrap
@@ -10,10 +10,10 @@ header
 					.two
 					.three
 
-				nav.main-menu
+				nav.main-menu(data-anim="headeranim")
 					ul
 						li.mobile
-							a(href="#") Главная
+							a(href="index.html") Главная
 						li
 							a(href="#") Направления
 							ul.main-submenu.mobile
@@ -45,7 +45,7 @@ header
 
 	.header			
 		.wrap
-			h1 
+			h1(data-anim="headeranim")
 				| Мы даем возможность 
 				span выдающимся основателям 
 				| из всех слоев общества
@@ -54,10 +54,16 @@ header
 				.line.line-two
 				.line.line-three
 		ul.nav-dots
-			li.nav-dots__item.nav-dots__item--current
-			li.nav-dots__item
-			li.nav-dots__item
-			li.nav-dots__item
-			li.nav-dots__item.nav-dots__item--current
-			li.nav-dots__item
-		a(href="#").scroll скролл
+			li
+				a(href="#main").nav-dots__item(data-div="#main")
+			li
+				a(href="#about").nav-dots__item(data-div="#about")
+			li
+				a(href="#individual").nav-dots__item(data-div="#individual")
+			li
+				a(href="#industrial").nav-dots__item(data-div="#industrial")
+			li
+				a(href="#financial").nav-dots__item(data-div="#financial")
+			li
+				a(href="#contacts").nav-dots__item(data-div="#contacts")
+		a(href="#about").scroll(data-div="#about") скролл

@@ -48,6 +48,11 @@
     border-top: 14px solid $color-blue;
     border-right: 14px solid $color-blue;
     position: relative;
+    transform: scale(0);
+    transition: 1s;
+    &.anim {
+        transform: scale(1);
+    }
     &:before {
         content: "";
         position: absolute;
