@@ -2,6 +2,7 @@
     padding-top: 50px;
     &__body {
         display: flex;
+        position: relative;
     }
     &__info {
         width: 50%;
@@ -141,5 +142,104 @@
         width: 70%;
         min-height: 692px;
         margin-left: 7%;
+        &-wrap {
+            width: 50%;
+            position: absolute;
+            right: 0;
+        }
+    }
+    //page
+    &__text {
+        margin-bottom: 25px;
+        p {
+            margin: 0;
+        }
+    }
+    &__form {
+        background: #F2F2F2;
+        
+        input, textarea {
+            font-family: $montserrat;
+            background: #fff;
+            border: none;
+            width: 100%;
+            padding: 30px;
+            font-size: 18px;
+            &::placeholder {
+                font-size: 18px;
+                color: #545454;
+            }
+        }
+        &-wrap {
+            width: 50%;
+            padding-left: 7%;
+        }
+    }
+}
+.form-line {
+    margin-bottom: 20px;
+    &.mark-btn {
+        margin-left: auto;
+        display: block;
+        max-width: 209px;
+        margin-bottom: 0;
+        input {
+            padding: 0;
+            background: transparent;
+        }
+    }
+}
+.agree-line {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.pagecontacts {
+    .contacts__map {
+        width: 90%;
+        margin-left: 0;
+        // min-height: 1027px;
+        min-height: 776px;
+    }
+    &__lines {
+        position: absolute;
+        top: 14%;
+        right: -68px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+        transform: rotate(-90deg);
+    }
+    .line {
+        &-one {
+            height: 95px;
+            top: 0;
+        }
+        &-two {
+            height: 150px;
+            top: 0;
+        }
+        &-three {
+            height: 75px;
+            top: 0;
+        }
+    }
+    &__img {
+        position: absolute;
+        bottom: -48%;
+        left: 5%;
+        &--right {
+            position: absolute;
+            bottom: 9%;
+            right: -79%;
+        }
+        .contacts__img--top {
+            height: 300px;
+        }
+        .contacts__img--bottom {
+            height: 410px;
+        }
     }
 }

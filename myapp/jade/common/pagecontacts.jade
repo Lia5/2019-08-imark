@@ -1,0 +1,41 @@
+section.contacts.pagecontacts
+    .wrap
+        .contacts__body
+            .contacts__info(data-anim="contactanim")
+                h2.title Наши контакты
+                .contacts__text 
+                    p Всегда рады Вам!
+                    p Звоните, пишите и заходите в гости:
+                .contacts__adress Киев, ул. Саксаганского, д. 120, коворкинг BiblioТech 
+                .contacts__tel-wrap 
+                    a(href="tel:+380442746540").contacts__tel +38 (044) 274 65 40 
+                    a(href="tel:+380663255301").contacts__tel +38 (066) 325 53 01 
+                .contacts__mail
+                    a(href="mailto:office@imark.com.ua") office@imark.com.ua
+            .contacts__map-wrap
+                .pagecontacts__lines
+                    .line.line-one
+                    .line.line-two
+                    .line.line-three
+                .contacts__map#map
+                .pagecontacts__img
+                    .contacts__img--left(style="background-image: url('img/pagecontacts-note.jpg')")
+                    .pagecontacts__img--right
+                        .contacts__img--top(style="background-image: url('img/pagecontacts-cap.jpg')")
+                        .contacts__img--bottom(style="background-image: url('img/pagecontacts-mon.jpg')")
+    .contacts__form
+        .wrap
+            .contacts__form-wrap
+                h2.title Написать нам:
+                form(action="#")
+                    .form-line
+                        input(type='text', name='name', placeholder="Ваше имя:", required)
+                    .form-line
+                        input(type='email', name='email', placeholder="Ваш email:", required)
+                    .form-line
+                        textarea(name="text", rows="7", placeholder="Текст сообщения")
+                    .agree-line Отправляя заявку, я даю согласие на обработку персональных данных
+                    .form-line.mark-btn
+                        span
+                            input(type='submit', value='Отправить')
+                    
