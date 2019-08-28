@@ -177,7 +177,6 @@ ul,li {
 
 @keyframes animRotate {
     0% {
-		opacity: 0;
 		transform: rotate(0deg);
     }
     25% {
@@ -188,17 +187,14 @@ ul,li {
         transform: rotate(180deg);
     }
     75% {
-		opacity: 1;
         transform: rotate(270deg);
     }
     100% {
-		opacity: 1;
         transform: rotate(360deg);
     }
 }
 @keyframes animRotate2 {
     0% {
-		opacity: 0;
 		transform: rotate(0deg);
     }
     25% {
@@ -209,11 +205,9 @@ ul,li {
         transform: rotate(180deg);
     }
     75% {
-		opacity: 1;
         transform: rotate(270deg);
     }
     100% {
-		opacity: 1;
         transform: rotate(450deg);
     }
 }
