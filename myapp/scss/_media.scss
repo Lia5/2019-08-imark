@@ -57,7 +57,7 @@
     }
     .industrial__dot-bottom {
         bottom: -16%;
-        right: 0;
+        // right: 0;
     }
     .footer .social {
         padding-right: 0;
@@ -114,7 +114,12 @@
     .contacts__tel {
         margin-bottom: 10px;
     }
-
+    .header h1 {
+        max-width: none;
+    }
+    .header .lines {
+        min-width: 110px;
+    }
 }
 @media only screen and (max-width: 1139px) {
   
@@ -288,6 +293,7 @@
         }
         .lines {
             margin: 0 10px 64px 46px;
+            min-width: auto;
         }
     }
     .lines {

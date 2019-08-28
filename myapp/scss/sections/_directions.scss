@@ -72,13 +72,30 @@
                 transform: scale(1);
             }
         }
-
         &:hover {
             img {
                 transform: scale(1.03);
             }
             &:before {
                 transform: scale(0.95);
+            }
+            .individual__dot-top {
+                &:before {
+                    animation-fill-mode: initial;
+                    transform: rotate(10deg);
+                    animation: none;
+                    transition-delay: none;
+                    opacity: 0.8;
+                }
+            }
+            .individual__dot-bottom {
+                &:before, &:after {
+                    animation-fill-mode: initial;
+                    transform: rotate(10deg);
+                    animation: none;
+                    transition-delay: none;
+                    opacity: 0.8;
+                }
             }
         }
     }
@@ -88,8 +105,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0;
+        
         &:before {
+            opacity: 0;
             content: "";
             position: absolute;
             border-radius: 50%;
@@ -98,11 +116,11 @@
             height: 43px;
             border-left: 22px solid #545454;
             border-right: 22px solid #e8e8e8;
+            transition: 1.3s;
         }
         &.anim {
-            opacity: 1;
+ 
             &:before {
-                
                 transition-delay: 2s;
                 transition: 1.3s;
                 animation: animRotate 2s linear;
@@ -154,26 +172,40 @@
         justify-content: space-between;
         overflow: hidden;
         transition: 1.3s;
-        
         .line {
             width: 15px;
             background: $color-red;
+            transition: 1.3s;
+            transition-delay: 2s;
+            height: 0;
             &-one {
-                height: 50%;
+                
                 top: 50%;
             }
             &-two {
-                height: 100%;
+
                 top: 0;
             }
             &-three {
 
-                height: 50%;
                 top: 0;
             }
         }
         &:hover {
             animation: animScale2 3s linear infinite;
+        }
+        &.anim {
+            .line {
+                &-one {
+                    height: 50%;
+                }
+                &-two {
+                    height: 100%;
+                }
+                &-three {
+                    height: 50%;
+                }
+            }
         }
 
     }
@@ -222,6 +254,26 @@
             transform: scale(1.03);
             &:before {
                 transform: scale(0.95);
+            }
+            .industrial__dot-top.anim {
+                &:before {
+                    opacity: 1;
+                    animation-delay: 0;
+                    animation: none;  
+                    animation-fill-mode: none;
+                }
+                &:after {
+                    opacity: 1;
+                    animation-delay: 0;
+                    animation: none;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .industrial__dot-bottom.anim {
+                animation-delay: 0;
+                animation: none;
+                animation-fill-mode: forwards;
+
             }
         }
         &.anim {
@@ -291,7 +343,7 @@
         height: 90px;
         &.anim {
             animation: animRotate 3s linear;
-            animation-delay: 1s
+
         }
         
     }
@@ -310,35 +362,21 @@
             left: 0;
             height: 15px;
             background: $color-yellow;
-            &-one {
-                width: 0;
-            }
-            &-two {
-                
-            }
-            &-three {
-
-            }
+            width: 0;
+            transition: 1.3s;
+            transition-delay: 2s;
         }
         &.anim {
             .line {
                 &-one {
-                    // width: 100%;
-                    animation-delay: 2s;
-                    animation: animLine1 1s linear;
-                    animation-fill-mode: forwards;
+                    width: 100%;
                 }
                 &-two {
-                    // width: 70px;
-                    animation-delay: 2s;
-                    animation: animLine2 5s linear;
-                    animation-fill-mode: forwards;
+                    width: 70px;
                 }
                 &-three {
-                    // width: 70px;
-                    animation-delay: 2s;
-                    animation: animLine2 3s linear;
-                    animation-fill-mode: forwards;
+                    width: 70px;
+
                 }   
             }
         }
@@ -401,18 +439,23 @@
         &:after {
             content: "";
             position: absolute;
-            bottom: -118px;
+            bottom: -50px;
             left: 0;
             background: url('../img/fin-img-bg.svg') no-repeat;
             width: 327px;
             height: 98px;
             z-index: -1;
+            transition: 1.3s
         }
         &:hover {
             transform: scale(1.03);
             &:before {
-                transform: scale(0.95);
+                transform: scale(0.9);
             }
+            &:after {
+                transform: scale(0.9);
+            } 
+
         }
         &.anim {
             img {
@@ -420,6 +463,9 @@
             }
             &:before {
                 top: -118px;
+            }
+            &:after {
+                bottom: -118px;
             }
         }
     }
@@ -438,26 +484,30 @@
             border-top: 22px solid #f2f2f2;
             border-bottom: 22px solid transparent;
             transform: rotate(90deg);
-            
+            opacity: 0;
         }
         &:after {
             content: "";
             position: absolute;
-            right: 50px;
+            right: 49px;
             top: -60px;
             border-radius: 50%;
             width: 42px;
             height: 0;
             border-top: 22px solid #c4c4c4;
             border-bottom: 22px solid transparent;
-            
+            opacity: 0;
         }
         &.anim {
             &:before {
-                animation: animRotate 5s linear;  
+                animation: animRotate2 5s linear;  
+                animation-fill-mode: forwards;
+                opacity: 1;
             }
             &:after {
-                animation: animRotateBack 8s linear;
+                animation: animRotateBack 5s linear;
+                animation-fill-mode: forwards;
+                opacity: 1;
             }
 
         }
@@ -514,18 +564,30 @@
         .line {
             width: 15px;
             background: $color-blue;
+            height: 0;
+            transition: 1.3s;
+            transition-delay: 2s;
             &-one {
-                height: 40px;
                 top: 25px;
             }
             &-two {
-                height: 100%;
                 top: 0;
             }
             &-three {
-
-                height: 40px;
                 top: 25px;
+            }
+        }
+        &.anim {
+            .line {
+                &-one {
+                    height: 40px;
+                }
+                &-two {
+                    height: 100%;
+                }
+                &-three {
+                    height: 40px;
+                }  
             }
         }
 

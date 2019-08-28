@@ -112,12 +112,13 @@ ul,li {
 	display: inline-block;
 	text-transform: uppercase;
     padding: 18px 38px 18px 18px;
-	transition: 0.5s;
+	transition: 1.3s;
 	cursor: pointer;
 	background: transparent;
 	border: 1px solid #222222;
 	min-width: 209px;
 	text-align: center;
+	top: 50px;
 	span {
 		position: relative;
 		&:after {
@@ -144,6 +145,9 @@ ul,li {
 				border-color: #fff;
 			}
 		}
+	}
+	&.anim {
+		top: 0;
 	}
 }
 @keyframes animationScroll {
@@ -190,6 +194,27 @@ ul,li {
     100% {
 		opacity: 1;
         transform: rotate(360deg);
+    }
+}
+@keyframes animRotate2 {
+    0% {
+		opacity: 0;
+		transform: rotate(0deg);
+    }
+    25% {
+		
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+		opacity: 1;
+        transform: rotate(270deg);
+    }
+    100% {
+		opacity: 1;
+        transform: rotate(450deg);
     }
 }
 @keyframes animRotateBack {
@@ -243,22 +268,7 @@ ul,li {
 		transform: translate(0, -50%) scale(1);
     }
 }
-@keyframes animLine1 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 90px;
-    }
-}
-@keyframes animLine2 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 70px;
-    }
-}
+
 
 
 

@@ -69,7 +69,9 @@ $(function() {
             if (dataName=="main") {
                 var posit = $(this).offset().top - 10000;
             }
-
+            if (dataName=="directionanimbtn1" || dataName=="directionanimbtn2" || dataName=="directionanimbtn3") {
+                var posit = $(this).offset().top - 800;
+            }
 
             // if ( window.innerWidth < 1341 || window.screen.width < 1341) {
             //     var posit = $(this).offset().top - 1000;
