@@ -167,7 +167,8 @@
     }
     &__form {
         background: #F2F2F2;
-        padding-bottom: 82px;
+        padding-top: 50px;
+        padding-bottom: 232px;
         input, textarea {
             font-family: $montserrat;
             background: #fff;
@@ -217,6 +218,9 @@
         min-height: 1027px;
         top: 60px;
         // min-height: 776px;
+    }
+    .contacts__body {
+        margin-bottom: 100px;
     }
     &__lines {
         position: absolute;
