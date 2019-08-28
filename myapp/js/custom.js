@@ -107,7 +107,7 @@ $(function() {
     function refreshVar() {
       try {
         navPos = $('.header').offset().top;
-        navPosEnd = $('.contacts').offset().top;
+        navPosEnd = $('.footer').offset().top;
       } catch (e){}
       navHeight = $('.fix-menu').outerHeight(true);
     }
