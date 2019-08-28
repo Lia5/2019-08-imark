@@ -637,6 +637,7 @@
     }
     .contacts__form {
         margin-top: 220px;
+        padding-bottom: 132px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -1014,6 +1015,10 @@
         margin-bottom: 7px;
     }
     /*contacts*/
+    .contacts__form {
+        margin-top: 0px;
+        padding-bottom: 102px;
+    }
     .pagecontacts {
         &__lines {
             display: none;
