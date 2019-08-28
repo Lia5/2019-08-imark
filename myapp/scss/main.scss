@@ -112,9 +112,9 @@ ul,li {
 	display: inline-block;
 	text-transform: uppercase;
     padding: 18px 38px 18px 18px;
-	transition: 1.3s;
+	transition: background-color 0.3s, transform 0.3s, top 1.3s;
 	cursor: pointer;
-	background: transparent;
+	background-color: transparent;
 	border: 1px solid #222222;
 	min-width: 209px;
 	text-align: center;
@@ -276,6 +276,10 @@ ul,li {
 @import "sections/about"; 
 @import "sections/directions"; 
 @import "sections/contacts"; 
+
+
+@import "sections/team"; 
+
 
 @import "sections/footer"; 
 
