@@ -3,6 +3,10 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    .logo {
+        display: flex;
+        align-items: center;
+    }
 }
 .nav {
     display: flex;
@@ -14,10 +18,7 @@ nav {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #222222;
-    .logo {
-        display: flex;
-        align-items: center;
-    }
+
 }
 .menu-toggle {
     display: none;
