@@ -79,22 +79,22 @@
             &:before {
                 transform: scale(0.95);
             }
-            .individual__dot-top {
-                &:before {
-                    animation-fill-mode: initial;
-                    animation: none;
-                    transition-delay: none;
-                    opacity: 1;
-                }
-            }
-            .individual__dot-bottom {
-                &:before, &:after {
-                    animation-fill-mode: initial;
-                    animation: none;
-                    transition-delay: none;
-                    opacity: 1;
-                }
-            }
+            // .individual__dot-top {
+            //     &:before {
+            //         animation-fill-mode: initial;
+            //         animation: none;
+            //         transition-delay: none;
+            //         opacity: 1;
+            //     }
+            // }
+            // .individual__dot-bottom {
+            //     &:before, &:after {
+            //         animation-fill-mode: initial;
+            //         animation: none;
+            //         transition-delay: none;
+            //         opacity: 1;
+            //     }
+            // }
         }
     }
     &__dot-top {
@@ -176,11 +176,9 @@
             transition-delay: 2s;
             height: 0;
             &-one {
-                
                 top: 50%;
             }
             &-two {
-
                 top: 0;
             }
             &-three {
@@ -252,26 +250,26 @@
             &:before {
                 transform: scale(0.95);
             }
-            .industrial__dot-top.anim {
-                &:before {
-                    opacity: 1;
-                    animation-delay: 0;
-                    animation: none;  
-                    animation-fill-mode: none;
-                }
-                &:after {
-                    opacity: 1;
-                    animation-delay: 0;
-                    animation: none;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .industrial__dot-bottom.anim {
-                animation-delay: 0;
-                animation: none;
-                animation-fill-mode: forwards;
+            // .industrial__dot-top.anim {
+            //     &:before {
+            //         opacity: 1;
+            //         animation-delay: 0;
+            //         animation: none;  
+            //         animation-fill-mode: none;
+            //     }
+            //     &:after {
+            //         opacity: 1;
+            //         animation-delay: 0;
+            //         animation: none;
+            //         animation-fill-mode: forwards;
+            //     }
+            // }
+            // .industrial__dot-bottom.anim {
+            //     animation-delay: 0;
+            //     animation: none;
+            //     animation-fill-mode: forwards;
 
-            }
+            // }
         }
         &.anim {
             &:before {
@@ -323,11 +321,13 @@
                 animation-delay: 2s;
                 animation: animRotate 2.3s linear;  
                 animation-fill-mode: forwards;
+                opacity: 1;
             }
             &:after {
                 animation-delay: 2s;
                 animation: animRotate 3s linear;
                 animation-fill-mode: forwards;
+                opacity: 1;
             }
         }
     }
@@ -452,22 +452,22 @@
             &:after {
                 transform: scale(0.9);
             } 
-            .financial__dot-top {
-                &:before {
-                    animation-fill-mode: initial;
-                    animation: none;
-                    transition-delay: none;
-                    opacity: 1;
-                }
-            }
-            .financial__dot-bottom {
-                &:before, &:after {
-                    animation-fill-mode: initial;
-                    animation: none;
-                    transition-delay: none;
-                    opacity: 1;
-                }
-            }
+            // .financial__dot-top {
+            //     &:before {
+            //         animation-fill-mode: initial;
+            //         animation: none;
+            //         transition-delay: none;
+            //         opacity: 1;
+            //     }
+            // }
+            // .financial__dot-bottom {
+            //     &:before, &:after {
+            //         animation-fill-mode: initial;
+            //         animation: none;
+            //         transition-delay: none;
+            //         opacity: 1;
+            //     }
+            // }
         }
         &.anim {
             img {
