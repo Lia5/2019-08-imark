@@ -1,7 +1,7 @@
 section.contacts#contacts
     .wrap
         .contacts__body
-            .contacts__info(data-anim="contactanim")
+            .contacts__info
                 h2.title Наши контакты
                 .contacts__adress Киев, ул. Саксаганского, д. 120, коворкинг BiblioТech 
                 .contacts__tel-wrap 
@@ -10,9 +10,9 @@ section.contacts#contacts
                 .contacts__mail
                     a(href="mailto:office@imark.com.ua") office@imark.com.ua
             .contacts__img
-                .contacts__img--left(style="background-image: url('img/contact-note.jpg')")
+                .contacts__img--left(style="background-image: url('img/contact-note.jpg')", data-anim="contactanim")
                 .contacts__img--right
-                    .contacts__img--top(style="background-image: url('img/contact-mon.jpg')")
-                    .contacts__img--bottom(style="background-image: url('img/contact-cap.jpg')")
-        .contacts__map#map
+                    .contacts__img--top(style="background-image: url('img/contact-mon.jpg')", data-anim="contactanim2")
+                    .contacts__img--bottom(style="background-image: url('img/contact-cap.jpg'", data-anim="contactanim3")
+        .contacts__map#map(data-anim="contactanim4")
            

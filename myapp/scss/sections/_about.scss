@@ -21,13 +21,9 @@
     }
 
     &__body {
-        transform: translateX(-120%);
         width: 40%;
         padding-top: 96px;
         transition: 1.3s;
-        &.anim {
-            transform: translateX(0);
-        }
     }
     &__chart {
         width: 60%;
@@ -99,7 +95,6 @@
     }
 }
 .chart {
-    
     position: relative;
     &__lines {
         bottom: 11%;
@@ -108,43 +103,53 @@
         height: 100%;
         right: 0;
     }
+
     .chart__line {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 74%;
+        height: 0;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position-y: bottom;
         &--blue {
-            animation: animationChart 5.5s infinite ease-in-out;
-            height: 100%;
             background-image: url("../img/chart/blue.png");
         }
         &--yellow {
-            animation: animationChart 8.5s infinite linear;
             background-image: url("../img/chart/yellow.png");
         }
         &--red {
-            animation: animationChart 10.5s infinite ease-out;
             background-image: url("../img/chart/red.png");
         }
         
     }
-    
+    &.anim {
+        .chart__line {
+            &--blue {
+                height: 74%;
+                animation: animationChart 3s linear;
+            }
+            &--yellow {
+                height: 55%;
+                animation: animationChart 3.5s linear;
+            }
+            &--red {
+                height: 45%;
+                animation: animationChart 4.5s linear;
+            }
+        }
+    }    
 }
 @keyframes animationChart {
     0% {
-        height: 70%;;
+        height: 0;
     }
     50% {
         height: 20%;
     }
     80% {
-        height: 50%;
+        height: 45%;
     }
-    100% {
-        height: 70%;
-    }
+
 }

@@ -157,13 +157,13 @@ header#main {
     }
     .line {
         &-one {
-            animation: animLines 4.5s linear infinite;
+            animation: animLines 4.5s linear;
         }
         &-two {
-            animation: animLines 5.5s linear infinite;
+            animation: animLines 5.5s linear;
         }
         &-three {
-            animation: animLines 3.5s linear infinite;
+            animation: animLines 3.5s linear;
         }
     }
     .logo {
