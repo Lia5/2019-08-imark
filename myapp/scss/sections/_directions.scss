@@ -82,19 +82,17 @@
             .individual__dot-top {
                 &:before {
                     animation-fill-mode: initial;
-                    transform: rotate(10deg);
                     animation: none;
                     transition-delay: none;
-                    opacity: 0.8;
+                    opacity: 1;
                 }
             }
             .individual__dot-bottom {
                 &:before, &:after {
                     animation-fill-mode: initial;
-                    transform: rotate(10deg);
                     animation: none;
                     transition-delay: none;
-                    opacity: 0.8;
+                    opacity: 1;
                 }
             }
         }
@@ -455,7 +453,22 @@
             &:after {
                 transform: scale(0.9);
             } 
-
+            .financial__dot-top {
+                &:before {
+                    animation-fill-mode: initial;
+                    animation: none;
+                    transition-delay: none;
+                    opacity: 1;
+                }
+            }
+            .financial__dot-bottom {
+                &:before, &:after {
+                    animation-fill-mode: initial;
+                    animation: none;
+                    transition-delay: none;
+                    opacity: 1;
+                }
+            }
         }
         &.anim {
             img {
