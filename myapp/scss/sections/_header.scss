@@ -116,7 +116,7 @@ header#main {
         color: #131313;
         padding-left: 115px;
         margin: 0;
-        transition: 2s;
+        transition: 1s;
         transition-delay: 0.5s;
         bottom: -100px;
         position: relative;
@@ -129,7 +129,7 @@ header#main {
             bottom: 0;
             left: 40px;
             background-color: #f8f8f8;
-            transition: 1s;
+            transition: 0.5s;
             transition-delay: 0.5s;
            
         }
@@ -161,8 +161,8 @@ header#main {
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center center;
-            transition-delay: 2.5s;
-                transition: 2.5s;
+            transition-delay: 1s;
+            transition: 1s;
         }
     }
     .lines {
@@ -170,13 +170,13 @@ header#main {
     }
     .line {
         &-one {
-            animation: animLines 4.5s linear;
+            animation: animLines 2s linear;
         }
         &-two {
-            animation: animLines 5.5s linear;
+            animation: animLines 2.5s linear;
         }
         &-three {
-            animation: animLines 3.5s linear;
+            animation: animLines 1.5s linear;
         }
     }
     .logo {
@@ -206,8 +206,8 @@ header#main {
 .main-menu {
     margin-right: 90px;
     opacity: 0;
-    transition: 1s;
-    transition-delay: 2s;
+    transition: 0.5s;
+    transition-delay: 1s;
     &.anim {
         opacity: 1;
     }
@@ -228,7 +228,7 @@ header#main {
             width: 0;
             height: 1px;
             border-bottom: 1px solid #545454;
-            transition: 0.8s;
+            transition: 0.5s;
         }
         &:hover {
             &:before {

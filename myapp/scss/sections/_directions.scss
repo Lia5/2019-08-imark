@@ -29,9 +29,9 @@
         margin-right: 14px;
         margin-left: auto;
         z-index: 1;
-        transition: 1.3s;
+        transition: 0.5s;
         img {
-            transition: 1.3s;
+            transition: 0.5s;
             transform: scale(0.95);
             width: 100%;
             box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,7 @@
             height: 50%;
             background-color: $color-red;
             z-index: -1;
-            transition: 1.3s ease-out;
+            transition: 0.5s ease-out;
         }
         &:after {
             content: "";
@@ -57,7 +57,7 @@
             background-size: 100%;
             height: 50%;
             z-index: -1;
-            transition: 1.3s ease-out;
+            transition: 0.5s ease-out;
         }
         &.anim {
             &:before {
@@ -65,7 +65,7 @@
             }
             &:after {
                 height: 146%;
-                transition: 1.5s;
+                transition: 0.5s;
                 transition-delay: 0.3s;
             }
             img {
@@ -113,14 +113,14 @@
             height: 43px;
             border-left: 22px solid #545454;
             border-right: 22px solid #e8e8e8;
-            transition: 1.3s;
+            transition: 0.5s;
         }
         &.anim {
             &:before {
                 opacity: 1;
-                transition-delay: 2s;
-                transition: 1.3s;
-                animation: animRotate 2s linear;
+                transition-delay: 0.5s;
+                transition: 0.5s;
+                animation: animRotate 1s linear;
                 animation-fill-mode: forwards;
             }
         }
@@ -152,7 +152,7 @@
         }
         &.anim {
             &:before, &:after {
-                animation: animRotate 3s linear;
+                animation: animRotate 1.5s linear;
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
@@ -168,12 +168,12 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        transition: 1.3s;
+        transition: 0.5s;
         .line {
             width: 15px;
             background: $color-red;
-            transition: 1.3s;
-            transition-delay: 2s;
+            transition: 0.5s;
+            transition-delay: 1s;
             height: 0;
             &-one {
                 top: 50%;
@@ -187,7 +187,7 @@
             }
         }
         &:hover {
-            animation: animScale2 3s linear infinite;
+            animation: animScale2 0.5s linear infinite;
         }
         &.anim {
             .line {
@@ -217,9 +217,9 @@
         max-width: 546px;
         margin-left: 10%;
         z-index: 1;
-        transition: 1.3s;
+        transition: 0.5s;
         img {
-            transition: 1.3s;
+            transition: 0.5s;
             transform: scale(0.95);
             width: 100%;
             box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
@@ -233,7 +233,7 @@
             height: 50%;
             background-color: $color-yellow;
             z-index: -1;
-            transition: 1.3s;
+            transition: 0.5s;
         }
         &:after {
             content: "";
@@ -277,8 +277,8 @@
             }
             &:after {
                 top: 111px;
-                transition: 4.3s;
-                transition-delay: 1s;
+                transition: 1s;
+                transition-delay: 0.5s;
             }
             img {
                 transform: scale(1);
@@ -318,14 +318,14 @@
         }
         &.anim {
             &:before {
-                animation-delay: 2s;
-                animation: animRotate 2.3s linear;  
+                animation-delay: 1s;
+                animation: animRotate 1s linear;  
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
             &:after {
-                animation-delay: 2s;
-                animation: animRotate 3s linear;
+                animation-delay: 1s;
+                animation: animRotate 1.5s linear;
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
@@ -339,7 +339,7 @@
         width: 90px;
         height: 90px;
         &.anim {
-            animation: animRotate 3s linear;
+            animation: animRotate 0.5s linear;
 
         }
         
@@ -360,8 +360,8 @@
             height: 15px;
             background: $color-yellow;
             width: 0;
-            transition: 1.3s;
-            transition-delay: 2s;
+            transition: 0.5s;
+            transition-delay: 1s;
         }
         &.anim {
             .line {
@@ -419,9 +419,9 @@
         margin-left: auto;
         margin-top: 120px;
         z-index: 1;
-        transition: 1.3s;
+        transition: 0.5s;
         img {
-            transition: 1.3s;
+            transition: 0.5s;
             transform: scale(0.95);
             width: 100%;
             box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
@@ -435,7 +435,7 @@
             width: 327px;
             height: 98px;
             z-index: -1;
-            transition: 1.3s
+            transition: 0.5s
         }
         &:after {
             content: "";
@@ -446,7 +446,7 @@
             width: 327px;
             height: 98px;
             z-index: -1;
-            transition: 1.3s
+            transition: 0.5s
         }
         &:hover {
             transform: scale(1.03);
@@ -516,12 +516,12 @@
         }
         &.anim {
             &:before {
-                animation: animRotate2 2s linear;  
+                animation: animRotate2 1s linear;  
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
             &:after {
-                animation: animRotateBack 2s linear;
+                animation: animRotateBack 1s linear;
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
@@ -543,7 +543,7 @@
             border-left: 17px solid #f2f2f2;
             border-right: 17px solid transparent;
             opacity: 0;
-            transition: 2s;
+            transition: 0.5s;
         }
         &:after {
             content: "";
@@ -556,17 +556,17 @@
             border-right: 30px solid #c4c4c4;
             border-left: 30px solid transparent;
             opacity: 0;
-            transition: 2s;
+            transition: 0.5s;
         }
         &.anim {
             &:before {
                 opacity: 1;
-                animation: animRotate 2s linear;  
+                animation: animRotate 1s linear;  
                 animation-fill-mode: forwards;
             }
             &:after {
                 opacity: 1;
-                animation: animRotateBack 2s linear;
+                animation: animRotateBack 1s linear;
                 animation-fill-mode: forwards;
             }
 
@@ -580,13 +580,13 @@
         height: 90px;
         display: flex;
         justify-content: space-between;
-        animation: animScale1 3s linear;
+        animation: animScale1 1.5s linear;
         .line {
             width: 15px;
             background: $color-blue;
             height: 0;
-            transition: 1.3s;
-            transition-delay: 2s;
+            transition: 0.5s;
+            transition-delay: 1s;
             &-one {
                 top: 25px;
             }

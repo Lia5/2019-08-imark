@@ -23,7 +23,7 @@
     &__body {
         width: 40%;
         padding-top: 96px;
-        transition: 1.3s;
+        transition: 0.5s;
     }
     &__chart {
         width: 60%;
@@ -50,7 +50,7 @@
     border-right: 14px solid $color-blue;
     position: relative;
     transform: scale(0);
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 1s;
     &.anim {
         transform: scale(1);
@@ -128,15 +128,15 @@
         .chart__line {
             &--blue {
                 height: 74%;
-                animation: animationChart 3s linear;
+                animation: animationChart 1.5s linear;
             }
             &--yellow {
                 height: 55%;
-                animation: animationChart 3.5s linear;
+                animation: animationChart 1.1s linear;
             }
             &--red {
                 height: 45%;
-                animation: animationChart 4.5s linear;
+                animation: animationChart 2s linear;
             }
         }
     }    
