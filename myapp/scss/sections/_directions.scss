@@ -404,6 +404,10 @@
         background: #f2f2f2;
         z-index: -1;
     }
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
     &__block {
         max-width: 531px;
         margin-right: 9%;
@@ -512,12 +516,12 @@
         }
         &.anim {
             &:before {
-                animation: animRotate2 5s linear;  
+                animation: animRotate2 2s linear;  
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
             &:after {
-                animation: animRotateBack 5s linear;
+                animation: animRotateBack 2s linear;
                 animation-fill-mode: forwards;
                 opacity: 1;
             }
@@ -539,6 +543,7 @@
             border-left: 17px solid #f2f2f2;
             border-right: 17px solid transparent;
             opacity: 0;
+            transition: 2s;
         }
         &:after {
             content: "";
@@ -551,14 +556,17 @@
             border-right: 30px solid #c4c4c4;
             border-left: 30px solid transparent;
             opacity: 0;
+            transition: 2s;
         }
         &.anim {
             &:before {
-                animation: animRotate 4s linear;  
+                opacity: 1;
+                animation: animRotate 2s linear;  
                 animation-fill-mode: forwards;
             }
             &:after {
-                animation: animRotateBack 4s linear;
+                opacity: 1;
+                animation: animRotateBack 2s linear;
                 animation-fill-mode: forwards;
             }
 
@@ -604,4 +612,5 @@
         }
 
     }
+
 }

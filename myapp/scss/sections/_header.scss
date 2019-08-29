@@ -239,6 +239,44 @@ header#main {
 
 
 }
+.main-submenu {
+    margin: 23px 0 23px;
+    a {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        color: #222222;
+        font-family: $montserrat;
+        text-transform: initial;
+        padding: 15px 47px 15px 42px;
+        background: url('../img/icons/arrow.svg') no-repeat;
+        background-position: left center;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 0;
+            width: 45px;
+            height: 30px;
+        }
+
+    }
+    li {
+        padding-left: 42px;
+        &:nth-child(1) a:after {
+            background-color: $color-red;
+        }
+        &:nth-child(2) a:after {
+            background-color: $color-yellow;
+        }
+        &:nth-child(3) a:after {
+            background-color: $color-blue;
+        }         
+    }
+}
 .lines {
     overflow: hidden;
     width: 110px;

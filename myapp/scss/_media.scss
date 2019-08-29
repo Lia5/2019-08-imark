@@ -129,6 +129,84 @@
     .header .lines {
         min-width: 110px;
     }
+    .services {
+        &__body {
+            .wrap {
+                flex-wrap: wrap;
+            }
+            
+        }
+        &__directions {
+            width: 100%;
+        }
+        &__img {
+            width: 100%;
+            padding-top: 190px;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 40px;
+                left: 89px;
+                background: url(../img/icons/fin-dots-top.svg) no-repeat;
+                background-size: 100%;
+                width: 327px;
+                height: 98px;
+                z-index: 1;
+                transition: 1.3s;
+            }
+
+        }
+        .financial .wrap {
+            flex-direction: column-reverse;
+        }
+        .directions__block {
+            width: 100%;
+        } 
+        .financial__block {
+            max-width: none;
+            margin-left: 113px;
+            width: 88%;
+        }
+        .financial {
+            &:after {
+                top: 20%;
+                height: 80%;
+            }
+            &:before {
+                width: 86%;
+                left: auto;
+                height: 53%;
+            }
+        }
+    }
+    .services__reviews {
+        .title {
+            padding-left: 79px;
+            &:before {
+                right: 35%;
+            }
+        }
+        .wrap {
+            padding: 0;
+        }
+
+    }
+    .services__review {
+        padding-left: 79px;
+        padding-right: 52px;
+    }    
+    .slick-arrow {
+        left: 47%;
+    }
+    .arrow-next {
+        left: calc(47% + 60px);
+    }
+
+    .services__reviews:before {
+        left: 20%;
+    }
+
 }
 @media only screen and (max-width: 1139px) {
   
@@ -238,43 +316,7 @@
         padding-left: 25px;
         padding-right: 25px;
     }
-    .main-submenu {
-        margin: 23px 0 23px;
-        a {
-            font-weight: 600;
-            font-size: 18px;
-            letter-spacing: 0.1em;
-            color: #222222;
-            font-family: $montserrat;
-            text-transform: initial;
-            padding: 15px 47px 15px 42px;
-            background: url('../img/icons/arrow.svg') no-repeat;
-            background-position: left center;
-            position: relative;
-            &:after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translate(0, -50%);
-                right: 0;
-                width: 45px;
-                height: 30px;
-            }
 
-        }
-        li {
-            padding-left: 42px;
-            &:nth-child(1) a:after {
-                background-color: $color-red;
-            }
-            &:nth-child(2) a:after {
-                background-color: $color-yellow;
-            }
-            &:nth-child(3) a:after {
-                background-color: $color-blue;
-            }         
-        }
-    }
     header {
         padding: 27px 24px 19px 17px;
         // min-height: 1023px;
@@ -638,6 +680,52 @@
     .contacts__form {
         margin-top: 220px;
         padding-bottom: 132px;
+    }
+    .services {
+        .financial__block {
+            margin-top: 0;
+            &:before {
+                top: -25%;
+            }
+        }
+        &__img {
+            &--left {
+                height: 388px;
+            }
+            &--right {
+                height: 311px;
+                &-img {
+                    top: 160px;
+                }
+            }
+        }
+        &__items .wrap {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 100%;
+            padding-bottom: 65px;
+
+        }
+        &__review-foto {
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 287px;
+            min-width: 50%;
+            height: 370px;
+        }
+        .financial__img img {
+            max-height: 457px;
+            width: auto;
+        }
+        .financial__dot-bottom {
+            top: auto;
+            bottom: 0;
+        }
+        .financial {
+            padding-bottom: 150px;
+
+        }
     }
 }
 @media only screen and (max-width: 767px) {
@@ -1040,6 +1128,104 @@
             }
         }
     }
+    .services {
+        &__body .wrap {
+            padding-top: 33px;
+        }
+        .financial {
+            padding-top: 110px;
+            &__block:before {
+                top: -35%;
+                height: 153%;
+            }
+            &:after {
+                width: 92%;
+
+            }
+        }
+        &__reviews {
+            &:before {
+                left: 0;
+                top: -5%;
+            }
+            .industrial__dot-top {
+                right: 12%;
+                top: 25%;
+                &:before {
+                    left: -36px;
+                    top: -11px;
+                    width: 90px;
+                    border-top-width: 45px;
+                    border-bottom-width: 45px;
+                }
+                &:after {
+                    top: 10px;
+                    left: -13px;
+                    width: 44px;
+                    border-top-width: 22px;
+                    border-bottom-width: 22px;
+                }
+            }
+            .title:before {
+                right: 0;
+            }
+        }  
+        &__img {
+            padding-top: 139px;
+            &:before {
+                width: 77%;
+            }
+            &--left {
+                height: 188px;
+            }
+            &--right {
+                height: 162px;
+                &-img {
+                    top: 110px;
+                }
+            }
+        } 
+        .financial__block {
+            margin-left: 29px;
+            &:before {
+                left: -11px
+            }
+        }   
+        .financial__img img {
+            max-height: 264px;
+        } 
+        &__reviews .title {
+            padding-left: 44px;
+            
+        }
+        &__review {
+            padding-left: 15px;
+            padding-right: 47px;
+            flex-direction: column;
+            &-body {
+                padding-right: 0;
+            }
+        }
+        &__review-foto {
+            width: 80%;
+            height: 322px;
+        }
+    }
+    
+    .slick-arrow {
+        top: -70px;
+        left: auto;
+        right: 20px;
+    }
+    .arrow-prev {
+        right: 60px;
+    }
+    .subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    
 }
 @media only screen and (max-width: 374px) {
     body {

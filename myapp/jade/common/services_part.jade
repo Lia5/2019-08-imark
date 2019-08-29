@@ -1,2 +1,91 @@
 section.services
-    .wrap
+    .services__body
+        .wrap
+            .services__directions
+                .title Направления
+                .subtitle Мы предлагаем помощь по трём основным направлениям
+                ul.main-submenu
+                    li
+                        a(href="#") Individual 
+                    li
+                        a(href="#") Industrial
+                    li
+                        a(href="#") Financial
+            .services__img
+                .services__img--left
+                    .services__img--left-img(style="background-image: url('img/indiv-bg.jpg')")
+                .services__img--right
+                    .financial__dot-bottom(data-anim="directionanim1")
+                    .services__img--right-img(style="background-image: url('img/indust-bg.jpg')")
+
+    .directions__item.financial#financial
+        .wrap
+            .directions__block
+                .financial__img(data-anim="directionanim7")
+                    img(src="img/fin-bg.jpg", alt="financial")
+                    .financial__dot-bottom(data-anim="directionanim8")
+            .directions__block.financial__block
+                .services__subtitle Для нас, как и для наших Клиентов, аналитика и исследования – не самоцель.
+                .primary-text 
+                    p Для разных каналов продаж - собственной сети, банков-партнеров или нефинансовых посредников. Мы постараемся, чтобы все, кто продвигает Ваш страховой продукт, говорили о нем красиво, просто и убедительно. 
+                    p Для нас, как и для наших Клиентов, аналитика и исследования – не самоцель. Это инструмент, который помогает разработать эффективные механики и форматы коммуникации с потребителем.
+    .services__items
+        .wrap
+            .services__item
+                .individual__icon(data-anim="directionanim3")
+                    .line.line-one
+                    .line.line-two
+                    .line.line-three
+                .services__item-title Individual
+                .primary-text  Психологи утверждают, что 95% успеха в отношениях зависят от желания и умения понять другую сторону.
+                a(href="#", data-anim="directionanimbtn3").mark-btn 
+                    span Подробнее
+            .services__item
+                .industrial__icon(data-anim="directionanim3")
+                    .line.line-one
+                    .line.line-two
+                    .line.line-three
+                .services__item-title Industrial
+                .primary-text  В информационных системах страховщиков много полезной и практичной, но, к сожалению, неочевидной информации.
+                a(href="#", data-anim="directionanimbtn3").mark-btn 
+                    span Подробнее
+            .services__item
+                .financial__icon(data-anim="directionanim3")
+                    .line.line-one
+                    .line.line-two
+                    .line.line-three
+                .services__item-title Financial
+                .primary-text  Для нас, как и для наших Клиентов, аналитика и исследования – не самоцель. Это инструмент, который помогает разработать.
+                a(href="#", data-anim="directionanimbtn3").mark-btn 
+                    span Подробнее
+     .services__reviews
+        .wrap
+            .title Отзывы
+            .industrial__dot-top(data-anim="directionanim5")
+            .services__reviews-slider
+                .services__review-wrap
+                    .services__review
+                        .services__review-foto(style="background-image: url('img/reviews/review1.jpg')")
+                        .services__review-body
+                            .primary-text Психологи утверждают, что 95% успеха в отношениях зависят от желания и умения понять другую сторону.
+                            .services__review-name Александр Васильев
+                        .services__reviews-slider
+                .services__review-wrap
+                    .services__review
+                        .services__review-foto(style="background-image: url('img/reviews/review2.jpg')")
+                        .services__review-body
+                            .primary-text Качественная аналитика позволит выявить скрытые резервы в работе с продуктами, каналами продаж и клиентской базой.
+                            .services__review-name Дмитрий Васильев
+                .services__review-wrap
+                    .services__review
+                        .services__review-foto(style="background-image: url('img/reviews/review2.jpg')")
+                        .services__review-body
+                            .primary-text Психологи утверждают, что 95% успеха в отношениях зависят от желания и умения понять другую сторону.
+                            .services__review-name Александр Васильев
+                        .services__reviews-slider
+                .services__review-wrap
+                    .services__review
+                        .services__review-foto(style="background-image: url('img/reviews/review1.jpg')")
+                        .services__review-body
+                            .primary-text Качественная аналитика позволит выявить скрытые резервы в работе с продуктами, каналами продаж и клиентской базой.
+                            .services__review-name Дмитрий Васильев
