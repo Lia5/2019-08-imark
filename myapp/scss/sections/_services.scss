@@ -97,7 +97,7 @@
                 content: "";
                 position: absolute;
                 top: 0;
-                left: 90px;
+                left: 27%;
                 width: 100%;
                 height: 100%;
                 background-color: $color-yellow;
@@ -184,6 +184,24 @@
     .individual__icon {
         position: static;
         transform: none;
+    }
+    &__img--right .individual__dot-top {
+        top: 55%;
+        left: auto;
+        right: 40%;
+        width: 0;
+        height: 0;
+    }
+    .financial__block {
+        position: relative;
+        .individual__dot-top {
+            top: auto;
+            bottom: -30%;
+            left: auto;
+            right: 0;
+            width: 0;
+            height: 0;
+        }
     }
     .industrial__icon {
         position: static;
