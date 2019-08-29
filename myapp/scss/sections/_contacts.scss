@@ -103,6 +103,9 @@
             }
             &.anim {
                 transform: scale(1);
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
         }
         &--right {
@@ -123,6 +126,9 @@
             }
             &.anim {
                 transform: scale(1);
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
         }
         &--bottom {
@@ -137,6 +143,9 @@
             }
             &.anim {
                 transform: scale(1);
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
         }
     }
