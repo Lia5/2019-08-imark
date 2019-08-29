@@ -86,7 +86,7 @@ nav {
 header {
     min-height: 90px;
     background: #F8F8F8;
-    padding: 19px 50px 19px 53px;
+    padding: 0 50px 19px 53px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -391,7 +391,7 @@ header#main {
 }
 //header
 .fix-menu {
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100%;
     background-color: #F8F8F8;
