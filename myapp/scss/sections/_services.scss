@@ -22,23 +22,38 @@
                 left: 73%;
             }
             li {
-                &:nth-child(2) {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
                     a:after {
-                        width: 75px;
-                    }
-                }
-                &:nth-child(2) {
-                    a:after {
-                        width: 150px;
-                    }
-                }
-                &:nth-child(2) {
-                    a:after {
-                        width: 95px;
+                        width: 0;
+                        transition: 1.3s;
                     }
                 }
             }
 
+        }
+        &.anim {
+            .main-submenu {
+                li {
+                    &:nth-child(1) {
+                        a:after {
+                            width: 75px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        a:after {
+                            width: 150px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        a:after {
+                            width: 95px;
+                        }
+                    }
+                }
+
+            }            
         }
     }
 
