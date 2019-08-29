@@ -111,13 +111,14 @@
         z-index: 0;
         &:after {
             top: 36%;
-            height: 60%;
+            height: 63%;
         }
         &:before {
             z-index: -1;
             top: 0;
             width: 74%;
             left: 41%;
+            height: 105%;
         }
         &__img:before {
             background-image: url(../img/icons/fin-dots-top.svg);
@@ -175,6 +176,16 @@
     }
     .financial__icon {
         position: static;
+    }
+    .financial__dot-bottom {
+        top: auto;
+        bottom: -5%;
+        left: 61%;
+    }
+    .financial__img:after {
+        background-size: 100%;
+        width: 45%;
+        left: -10%;
     }
     &__reviews {
         position: relative;

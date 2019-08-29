@@ -108,6 +108,12 @@
         flex-wrap: wrap;
         justify-content: flex-end;
     }
+    .services .financial:after {
+        height: 53%;
+    }
+    .services .financial:before {
+        height: 97%;
+    }
 }
 @media only screen and (max-width: 1240px) {
     // .header h1 {
@@ -717,10 +723,6 @@
         .financial__img img {
             max-height: 457px;
             width: auto;
-        }
-        .financial__dot-bottom {
-            top: auto;
-            bottom: 0;
         }
         .financial {
             padding-bottom: 150px;
