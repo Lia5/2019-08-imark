@@ -71,6 +71,9 @@
     .footer .social {
         padding-right: 0;
     }
+    .service__item {
+        margin: 50px 0;
+    }
 }
 @media only screen and (max-width: 1495px) {
     .header {
@@ -113,6 +116,25 @@
     }
     .services .financial:before {
         height: 97%;
+    }
+    .service {
+        .wrap {
+            padding: 0 90px;
+        }
+        &__about {
+            &-right {
+                padding: 30px 30px 100px 30px;
+            }
+            &-img {
+                top: 50%;
+                right: -12%;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 36%;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 1240px) {
@@ -211,6 +233,23 @@
 
     .services__reviews:before {
         left: 20%;
+    }
+    .service {
+        &__body-right.anim:after {
+            bottom: 30%;
+            height: 32%;
+        }
+        .individual__icon {
+            width: 62px;
+            height: 65px;
+        }        
+    }
+    .client {
+        &__name { 
+            padding: 15px 10px;
+            font-size: 16px;
+            line-height: 18px;
+        }
     }
 
 }
@@ -729,6 +768,74 @@
 
         }
     }
+    .service {
+        &__about {
+            flex-wrap: wrap;
+            &-right {
+                margin-left: -90px;
+                .individual__icon {
+                    left: auto;
+                    right: -12%;
+                }
+                .primary-text {
+                    width: 51%;
+                }
+            }
+            &-img {
+                right: -6%;
+            }
+        }
+        &__part {
+            width: 100%;
+        }
+        &__body {
+            .wrap {
+                flex-wrap: wrap;
+            }
+            &:before {
+                content: none;
+            }
+            &-left {
+                position: relative;
+                z-index: 1;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -20px;
+                    width: 160%;
+                    height: 150%;
+                    background: #f2f2f2;
+                    z-index: -1;
+                }
+            }
+            &-right {
+                z-index: 1;
+                right: -50px;
+                &:after {
+                    bottom: -10%;
+                }
+                &.anim:after {
+                    bottom: -28%;
+                }
+            }
+        }
+        &__info {
+            .wrap {
+                flex-wrap: wrap;
+            }
+            &-item {
+                padding-right: 0;
+                max-width: none;
+            }
+        }
+    }
+    .client {
+        width: 33%;
+        width: calc(100% / 3);
+        height: calc(100vw / 3);
+    }
+
 }
 @media only screen and (max-width: 767px) {
     .wrap {
@@ -1226,7 +1333,13 @@
         font-size: 14px;
         line-height: 24px;
     }
-
+    .client {
+        &__name { 
+            padding: 8px 5px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
     
 }
 @media only screen and (max-width: 374px) {
