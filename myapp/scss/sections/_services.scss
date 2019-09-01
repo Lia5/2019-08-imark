@@ -3,6 +3,19 @@
     .subtitle {
         max-width: 451px;
     }
+    .main-submenu {
+        margin-top: 44px;
+        li {
+            padding-left: 5px;
+        }
+        a {
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+    }
+    .financial__img {
+        margin-top: 5px;
+    }
     &__body {
         background-color: #f8f8f8;
         .wrap {
@@ -10,16 +23,17 @@
             justify-content: space-between;
             position: relative;
             z-index: 1;
-            padding-top: 100px;
+            padding-top: 89px;
         }
         
     }
     &__directions {
-        width: 40%;
+        width: 47%;
+        padding: 34px 65px 20px;
         .main-submenu {
             a:after {
                 right: auto;
-                left: 73%;
+                left: 40%;
             }
             li {
                 &:nth-child(1),
@@ -58,11 +72,11 @@
     }
 
     &__img {
-        width: 54%;
+        width: 50%;
         display: flex;
         justify-content: space-between;
         &--left {
-            width: 48%;
+            width: 60%;
             height: 548px;
             position: relative;
             &:before {
@@ -90,6 +104,7 @@
         }
         &--right {
             position: relative;
+            right: -5%;
             width: 330px;
             width: 40%;
             height: 434px;
@@ -98,7 +113,7 @@
                 position: absolute;
                 top: 0;
                 left: 27%;
-                width: 100%;
+                width: 132%;
                 height: 100%;
                 background-color: $color-yellow;
                 z-index: -1;
@@ -121,26 +136,28 @@
         font-size: 22px;
         line-height: 30px;
         font-weight: 700;
+        margin-bottom: 25px;
     }
     .financial {
         z-index: 0;
         &:after {
-            top: 36%;
-            height: 63%;
+            top: 31%;
+            height: 73%;
         }
         &:before {
             z-index: -1;
             top: 0;
             width: 74%;
-            left: 41%;
-            height: 105%;
+            left: 38%;
+            height: 112%;
         }
         &__img:before {
             background-image: url(../img/icons/fin-dots-top.svg);
         }
         &__block {
-            margin-right: 0;
+            margin-right: auto;
             margin-left: auto;
+            margin-top: 12%;
         }
         &__dot-bottom {
             bottom: auto;
@@ -153,6 +170,8 @@
         }
     }
     &__items {
+        padding-top: 104px;
+        padding-bottom: 139px;
         .wrap {
             display: flex;
             justify-content: space-between;
@@ -167,6 +186,7 @@
         padding-bottom: 115px;
         width: 30%;
         &-title {
+            padding-top: 36px;
             font-size: 48px;
             line-height: 100px;
             /* identical to box height, or 208% */
@@ -176,6 +196,7 @@
         }
         .mark-btn {
             margin-top: auto;
+            width: 209px;
         }
     }
     .primary-text {
@@ -210,10 +231,10 @@
     .financial__icon {
         position: static;
     }
-    .financial__dot-bottom {
+    .financial__img .financial__dot-bottom {
         top: auto;
-        bottom: -5%;
-        left: 61%;
+        bottom: -11%;
+        left: 51%;
     }
     .financial__img:after {
         background-size: 100%;
@@ -237,6 +258,8 @@
         }
         .title {
             position: relative;
+            padding: 19px 0;
+            margin-bottom: 90px;
             &:before {
                 content: "";
                 position: absolute;
@@ -249,13 +272,19 @@
             }
         }
         .industrial__dot-top {
-            right: 0%;
-            top: 8%;
+            right: 14%;
+            top: 10%;
             &:before {
                 border-top-color: $color-red;
+                width: 102px;
+                border-width: 51px;
             }
             &:after {
                 border-color: $color-blue;
+                top: -1px;
+                left: -36px;
+                width: 50px;
+                border-width: 25px;
             }
         }
     }
@@ -285,11 +314,14 @@
                 background-size: 100%;
 
             }
+            .primary-text {
+                margin-top: 30px;
+            }
         }
         &-name {
             margin-top: 50px;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 16px;
             line-height: 30px;
         }

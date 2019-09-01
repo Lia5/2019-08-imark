@@ -101,6 +101,16 @@
         height: 160%;
 
     }
+    .contacts__tel-wrap {
+        flex-wrap: wrap;
+        &:before {
+            top: 0;
+            transform: none;
+        }
+    }
+    .contacts__tel {
+        margin-bottom: 10px;
+    }
     .contacts__info {
         padding-left: 2%;
     }
@@ -110,6 +120,21 @@
     .footer .wrap {
         flex-wrap: wrap;
         justify-content: flex-end;
+    }
+    .pagecontacts {
+        .contacts__img--left {
+            width: 56%;
+            height: 479px;
+        }
+        &__img {
+            bottom: -19%;
+            .contacts__img--top {
+                height: 260px;
+            }
+            .contacts__img--bottom {
+                height: 356px;
+            }
+        }
     }
     .services .financial:after {
         height: 53%;
@@ -138,19 +163,6 @@
     }
 }
 @media only screen and (max-width: 1240px) {
-    // .header h1 {
-    //     max-width: none;
-    // }
-    .contacts__tel-wrap {
-        flex-wrap: wrap;
-        &:before {
-            top: 0;
-            transform: none;
-        }
-    }
-    .contacts__tel {
-        margin-bottom: 10px;
-    }
     .header h1 {
         max-width: none;
     }
@@ -162,20 +174,26 @@
             .wrap {
                 flex-wrap: wrap;
             }
-            
+            .title {
+                margin-bottom: 45px;
+            }
+        }
+        .subtitle {
+            max-width: none;
         }
         &__directions {
             width: 100%;
+            padding: 10px 0 20px;
         }
         &__img {
             width: 100%;
-            padding-top: 190px;
+            padding-top: 224px;
             position: relative;
             &:before {
                 content: "";
                 position: absolute;
-                top: 40px;
-                left: 89px;
+                top: 68px;
+                left: 0;
                 background: url(../img/icons/fin-dots-top.svg) no-repeat;
                 background-size: 100%;
                 width: 327px;
@@ -488,6 +506,10 @@
                 top: -226px;
                 height: 860px;
             }
+            &.anim:before {
+                top: -226px;
+                height: 860px;
+            }
         }
         &__icon {
             width: 63px;
@@ -539,7 +561,7 @@
             right: 20%;
             top: auto;
             transition: none;
-            bottom: -42%;
+            bottom: -284px;
             width: 63px;
             height: 53px;
             .line {
@@ -548,6 +570,13 @@
                 height: 9px;
                 &-two, &-three {
                     width: 49px;
+                }
+            }
+            &.anim {
+                .line {
+                    &-two, &-three {
+                        width: 49px;
+                    }
                 }
             }
         }
@@ -615,7 +644,7 @@
             }
         }
         &__icon {
-            bottom: -61%;
+            bottom: -411px;
             right: 29%;
             width: 65px;
             height: 80px;
@@ -631,7 +660,7 @@
         }
         &__info {
             width: 100%;
-            margin-top: 50px;
+            margin-top: 99px;
             padding-left: 0;
         }
         &__img {
@@ -652,7 +681,7 @@
         }
         &__adress {
             max-width: 300px;
-            margin-bottom: 29px;
+            margin-bottom: 48px;
         }
         &__map {
             top: -80px;
@@ -702,71 +731,170 @@
             width: 100%;
             top: 0;
         }
-        .contacts__img--left {
-            width: 56%;
-            height: 479px;
-        }
-        &__img {
-            bottom: -19%;
-            .contacts__img--top {
-                height: 260px;
-            }
-            .contacts__img--bottom {
-                height: 356px;
-            }
-        }
         .pagecontacts__lines {
             right: -118px;
         }
         .line {
             width: 30px;
         }
+        .contacts__tel-wrap {
+            flex-direction: row;
+            margin-bottom: 22px;
+        }
+        &__lines {
+            position: absolute;
+            top: 24%;
+        }
+        &__img {
+            bottom: -35%;
+            left: -6%;
+           
+            &--right {
+                width: 48%;
+                right: -18%;
+            }
+        }
+        .contacts__img--left {
+            width: 67%;
+        }
     }
     .contacts__form {
         margin-top: 220px;
-        padding-bottom: 132px;
+        padding-bottom: 107px;
+        padding-top: 204px;
+        .wrap {
+            padding: 0 46px;
+        }
     }
     .services {
+        &__subtitle {
+            margin-bottom: 31px;
+        }
         .financial__block {
             margin-top: 0;
+            padding-top: 102px;
+            width: 81%;
             &:before {
                 top: -25%;
+                padding-bottom: 190px;
             }
         }
         &__img {
             &--left {
                 height: 388px;
+                &-img {
+                    width: 450px;
+                    width: 88%;
+                }
+                &:before {
+                    left: -43%;
+                }
             }
             &--right {
                 height: 311px;
                 &-img {
-                    top: 160px;
+                    top: 182px;
+                    right: 21%;
+                    left: auto;
+                }
+                &:after {
+                    top: 4%;
+                    left: 9%;
+                    width: 132%;
+                    height: 126%;
                 }
             }
         }
-        &__items .wrap {
-            flex-wrap: wrap;
+        &__items {
+            padding-top: 0;
+            padding-bottom: 49px;
+            .wrap {
+                flex-wrap: wrap;
+            }
         }
         &__item {
             width: 100%;
-            padding-bottom: 65px;
-
+            max-width: 498px;
+            margin: 0 auto;
+            padding-bottom: 111px;
+            &-title {
+                padding-top: 50px;
+                margin-bottom: 25px;
+            }
         }
         &__review-foto {
             background-repeat: no-repeat;
             background-size: cover;
             width: 287px;
-            min-width: 50%;
+            min-width: 45%;
             height: 370px;
         }
-        .financial__img img {
-            max-height: 457px;
-            width: auto;
+        .financial__img {
+            margin-top: 33px;
+            right: auto;
+            left: -5%;
+            img {
+                max-height: 457px;
+                width: auto;
+            }
+            &:after {
+                left: 9%;
+                bottom: -130px;
+
+            }
+            .financial__dot-bottom {
+                bottom: -14%;
+                left: auto;
+                right: 21%;
+            }
         }
         .financial {
-            padding-bottom: 150px;
+            padding-bottom: 190px;
+            &:after {
+                top: 22%;
+                height: 84%;
+            }
+            &__icon {
+                position: absolute;
+                bottom: auto;
+                top: 12%;
+                right: -5%;
+            }
 
         }
+        .financial__dot-bottom {
+            top: 23%;
+            left: 62%;
+        }
+        &__reviews {
+            &-slider {
+                padding-top: 8px;
+            }
+            .industrial__dot-top {
+                right: 11%;
+                top: 9%;
+                &:before {
+                    width: 60px;
+                    border-width: 30px;
+                }
+                &:after {
+                    top: -4px;
+                    left: -41px;
+                    width: 26px;
+                    border-width: 13px;
+                }
+            }
+        }
+        &__review-body {
+            padding: 107px 0 60px 35px;
+            &:before {
+                top: 31px;
+                left: 34px;
+            }
+        }
+    }
+    .slick-arrow {
+        top: -177px;
     }
     .service {
         &__about {
@@ -1117,7 +1245,7 @@
             }
         }
         &__icon {
-            bottom: -79%;
+            bottom: -340px;
             right: 14%;
             width: 34px;
             height: 44px;
@@ -1127,6 +1255,15 @@
                     height: 20px;
                     top: 15px;
                 }
+            }
+            &.anim {
+                .line {
+                    width: 7px;
+                    &-one, &-three {
+                        height: 20px;
+                        top: 15px;
+                    }
+                }                
             }
         }
 
@@ -1215,20 +1352,44 @@
     .contacts__form {
         margin-top: 0px;
         padding-bottom: 102px;
+        padding-top: 180px;
+        &-wrap {
+            padding: 0 32px;
+        }
+        input, textarea {
+            font-size: 14px;
+            padding: 21px;
+        }
     }
     .pagecontacts {
+        .wrap {
+            padding: 0px 13px;
+        }
         &__lines {
+            display: none;
+        }
+        .contacts__info {
+            margin-top: 56px;
+        }
+        .title {
+            max-width: 290px;
+            margin-bottom: 48px;
+        }
+        .contacts__text {
             display: none;
         }
         .contacts__map {
             min-height: 451px;
+        }
+        .contacts__tel-wrap {
+            margin-bottom: 1px;
         }
         .contacts__img--left {
             // width: 56%;
             height: 211px;
         }
         &__img {
-            bottom: -6%;
+            bottom: -37%;
             .contacts__img--top {
                 height: 115px;
             }
@@ -1237,19 +1398,91 @@
             }
         }
     }
+    .form-line.mark-btn {
+        max-width: none;
+    }
     .services {
-        &__body .wrap {
-            padding-top: 33px;
+        &__body {
+            .wrap {
+                padding: 14px;
+            }
+            .title {
+                margin-bottom: 4px;
+            }
+        }
+        .main-submenu {
+            margin-top: 31px;
+            a {
+                font-size: 14px;
+                &:after {
+                    left: 54%;
+                    height: 25px;
+                }
+            }
+        }
+        &__img--left-img {
+            width: 81%;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__item {
+            position: relative;
+            padding-bottom: 22px;
+            .mark-btn {
+                width: auto;
+            }
+            &-title {
+                font-size: 36px;
+                line-height: 1.2;
+            }
+        }
+        &__items .wrap {
+            padding: 35px 47px;
+        }
+        .individual__icon {
+            position: absolute;
+            right: 1%;
+            bottom: auto;
+            top: 12%;
+        }
+        .industrial__icon {
+            position: absolute;
+            bottom: auto;
+            top: 15%;
         }
         .financial {
             padding-top: 110px;
-            &__block:before {
-                top: -35%;
-                height: 153%;
+            padding-bottom: 64px;
+            &__block {
+                margin-top: 0;
+                padding-top: 6px;
+                width: 100%;
+                margin-left: 0;
+                padding: 0 0 0 22px;
+                &:before {
+                    top: -35%;
+                    height: 109%;
+                }
             }
             &:after {
-                width: 92%;
-
+                width: 96%;
+            }
+            &__dot-bottom {
+                bottom: -4%;
+                &:before {
+                    right: 12px;
+                    top: 9px;
+                }
+            }
+            &__img {
+                left: 0%;
+                .financial__dot-bottom {
+                    bottom: -1%;
+                }
+                &:after {
+                    bottom: -99px;
+                }
             }
         }
         &__reviews {
@@ -1261,22 +1494,32 @@
                 right: 12%;
                 top: 25%;
                 &:before {
-                    left: -36px;
-                    top: -11px;
-                    width: 90px;
-                    border-top-width: 45px;
-                    border-bottom-width: 45px;
+                    // left: -36px;
+                    // top: -11px;
+                    // width: 90px;
+                    // border-top-width: 45px;
+                    // border-bottom-width: 45px;
+                    left: -17px;
+                    top: 5px;
+                    width: 60px;
+                    border-top-width: 30px;
+                    border-bottom-width: 30px;
                 }
                 &:after {
-                    top: 10px;
-                    left: -13px;
-                    width: 44px;
-                    border-top-width: 22px;
-                    border-bottom-width: 22px;
+                    // top: 10px;
+                    // left: -13px;
+                    // width: 44px;
+                    // border-top-width: 22px;
+                    // border-bottom-width: 22px;
+                    top: 19px;
+                    left: -1px;
+                    width: 30px;
+                    border-top-width: 15px;
+                    border-bottom-width: 15px;
                 }
             }
             .title:before {
-                right: 0;
+                right: 13%;
             }
         }  
         &__img {
@@ -1295,7 +1538,6 @@
             }
         } 
         .financial__block {
-            margin-left: 29px;
             &:before {
                 left: -11px
             }
@@ -1304,30 +1546,36 @@
             max-height: 264px;
         } 
         &__reviews .title {
-            padding-left: 44px;
-            
+            padding: 2px 0 2px 44px;
+            margin-bottom: 40px
         }
         &__review {
             padding-left: 15px;
             padding-right: 47px;
             flex-direction: column;
             &-body {
-                padding-right: 0;
+                padding: 17px 0 26px 35px;
+                &:before {
+                    content: none;
+                }
             }
         }
         &__review-foto {
             width: 80%;
             height: 322px;
+            margin-bottom: 0;
         }
     }
     
     .slick-arrow {
-        top: -70px;
+        top: -109px;
         left: auto;
         right: 20px;
+        right: 20%;
     }
     .arrow-prev {
         right: 60px;
+        right: 30%;
     }
     .subtitle {
         font-size: 14px;
@@ -1435,6 +1683,15 @@
     .rights {
         font-size: 10px;
         line-height: 1.5;
+    }
+    .services__reviews .title:before {
+        right: 6%;
+    }
+    .slick-arrow {
+        right: 15%;
+    }
+    .arrow-prev {
+        right: 23%;
     }
 }
 @media only screen and (max-width: 413px) {
