@@ -282,24 +282,34 @@
     .wrap {
         padding: 0 80px;
     }
+    .fix-menu {
+        .wrap {
+            padding: 0 21px;
+        }
+    }
+    nav {
+        .logo, .nav {
+            padding-top: 30px;
+        }
+    }
     .main-submenu.mobile,
     .mobile {
         display: block;
     }
     .menu-toggle {
         display: block;
-        width: 84px;
+        width: 87px;
         height: 84px;padding: 30px;
         position: absolute;
-        top: -19px;
-        right: 100px;
+        top: 6px;
+        right: 47px;
         cursor: pointer;
         z-index: 5;
         .one, .two, .three {
             width: 100%;
-            height: 3px;
+            height: 2px;
             background: #000;
-            margin: 4px auto;
+            margin: 9px auto;
             backface-visibility: hidden;
             transition-duration: .3s;
         }
@@ -373,15 +383,20 @@
             display: flex;
             margin-top: 10px;
         }
-   
+        .main-submenu {
+            a {
+                font-size: 18px;
+                text-transform: initial;
+            }
+        }
     }
     .menu-wrap {
         padding-left: 25px;
         padding-right: 25px;
     }
-
+    
     header {
-        padding: 27px 24px 19px 17px;
+        padding: 0 24px 19px 17px;
         // min-height: 1023px;
     }
     .header {
@@ -422,7 +437,7 @@
 
     }
     .about {
-        padding-bottom: 173px;
+        padding-bottom: 270px;
         .wrap {
             flex-direction: column;
         }
@@ -483,6 +498,8 @@
     }
     .directions {
         margin-bottom: 0;
+        margin-top: -160px;
+        top: 0;
         &__item {
             .wrap {
                 flex-direction: column;
@@ -493,7 +510,8 @@
         }
     }
     .individual {
-        padding-top: 65px;
+        padding-top: 23px;
+        padding-bottom: 229px;
         &__block {
             max-width: none;
             margin-top: 233px;
@@ -522,10 +540,14 @@
                 width: 13px;
             }
         }
+        &__dot-bottom {
+            bottom: -70px;
+            right: 8px;
+        }
 
     }
     .industrial {
-
+        overflow: initial;
         padding-top: 62px;
         padding-bottom: 0;
         .wrap {
@@ -536,7 +558,7 @@
             margin-left: 0;
             &:before {
                 right: -23%;
-                top: -35%;
+                top: -29%;
                 height: 154%;
             }
 
@@ -597,7 +619,7 @@
         }
         &:after {
             top: 187px;
-            height: 78%;
+            height: 82%;
         }
         &__img {
             max-width: none;
@@ -644,7 +666,7 @@
             }
         }
         &__icon {
-            bottom: -411px;
+            bottom: -384px;
             right: 29%;
             width: 65px;
             height: 80px;
@@ -660,7 +682,7 @@
         }
         &__info {
             width: 100%;
-            margin-top: 99px;
+            margin-top: 54px;
             padding-left: 0;
         }
         &__img {
@@ -681,7 +703,7 @@
         }
         &__adress {
             max-width: 300px;
-            margin-bottom: 48px;
+            margin-bottom: 28px;
         }
         &__map {
             top: -80px;
@@ -983,6 +1005,19 @@
     .mark-btn {
         width: 100%;
     }
+    .menu-toggle { 
+        top: -5px;
+        width: 83px;
+        .one, .three, .two {
+            margin: 7px auto;
+        }
+    }
+    .lang {
+        font-size: 12px;
+    }
+    nav .nav {
+        padding-top: 9px;
+    }
     .main-menu>ul {
         width: 100%;
     }
@@ -1027,6 +1062,7 @@
     }
     .about {
         padding-top: 201px;
+        padding-bottom: 146px;
         &__arrows {
             right: auto;
             left: 88px;
@@ -1076,7 +1112,7 @@
         padding-bottom: 111px;
         &__img {
             max-width: 73%;
-            margin-top: 0;
+            margin-top: 12px;
             &:before {
                 top: -47%;
                 height: 190%;
@@ -1089,6 +1125,21 @@
                 height: 340px;
                 top: -26%;
                 left: 16%;
+            }
+            &.anim {
+                &:before {
+                    top: -47%;
+                    height: 190%;
+                    width: 134%;
+                    right: -26%;
+                }
+                &:after {
+                    width: 63%;
+                    background-size: 100%;
+                    height: 340px;
+                    top: -26%;
+                    left: 16%;
+                }                
             }
         }
         &__dot-top:before {
@@ -1130,11 +1181,21 @@
         }
     }
     .industrial {
+        background-color: initial;
         &__img {
             max-width: 83%;
             margin-left: 9%;
             &:before {
-                height: 161%;
+                height: 145%;
+                top: -18%;
+                right: -32%;
+            }
+            &.anim {
+                &:before {
+                    height: 145%;
+                    top: -18%;
+                    right: -32%;
+                }                
             }
         }
         &__dot-top {
@@ -1155,6 +1216,22 @@
                 border-top-width: 15px;
                 border-bottom-width: 15px;
             }
+            &.anim {
+                &:after {
+                    top: -5px;
+                    left: -28px;
+                    width: 14px;
+                    border-top-width: 7px;
+                    border-bottom-width: 7px;
+                }
+                &:before {
+                    left: -36px;
+                    top: -11px;
+                    width: 30px;
+                    border-top-width: 15px;
+                    border-bottom-width: 15px;
+                }                
+            }
 
         }
         &__dot-bottom {
@@ -1168,7 +1245,7 @@
             padding: 0 30px;
         }
         &__icon {
-            bottom: -65%;
+            bottom: -224px;
             right: -2%;
             width: 35px;
             height: 33px;
@@ -1177,6 +1254,18 @@
                 &-three, &-two {
                     width: 29px;
                 }
+            }
+            &.anim {
+                bottom: -224px;
+                right: -2%;
+                width: 35px;
+                height: 33px;
+                .line {
+                    height: 6px;
+                    &-three, &-two {
+                        width: 29px;
+                    }
+                }                
             }
         }
 
@@ -1196,14 +1285,28 @@
                 left: 93px;
                 width: 152px;
                 height: 98px;
-            }
-            &:before {
                 content: "";
                 background-size: 100%;
             }
             &:after {
                 width: 147px;
                 background-size: 100%;
+            }
+            &.anim {
+                width: 92%;
+                right: 0;
+                &:before {
+                    top: -87px;
+                    left: 93px;
+                    width: 152px;
+                    height: 98px;
+                    content: "";
+                    background-size: 100%;
+                }
+                &:after {
+                    width: 147px;
+                    background-size: 100%;
+                }
             }
         }
         &__block {
@@ -1245,7 +1348,7 @@
             }
         }
         &__icon {
-            bottom: -340px;
+            bottom: -215px;
             right: 14%;
             width: 34px;
             height: 44px;
@@ -1301,6 +1404,7 @@
         }
         &__img--right {
             top: -16%;
+            right: 0;
         }
         &__img--top {
             width: 100%;

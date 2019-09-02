@@ -91,6 +91,9 @@ header {
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    .wrap {
+        padding: 0px 57px;
+    }
 }
 header#main {
     min-height: 450px;
@@ -106,6 +109,7 @@ header#main {
         display: flex;
         width: 100%;
         justify-content: space-between;
+
 
     }
     h1 {
@@ -204,7 +208,7 @@ header#main {
     display: none;
 }
 .main-menu {
-    margin-right: 90px;
+    margin-right: 30px;
     opacity: 0;
     transition: 0.5s;
     transition-delay: 1s;
@@ -216,7 +220,7 @@ header#main {
     }
     a  {
         display: block;
-        padding: 20px 30px;
+        padding: 20px;
         position: relative;
         &:before {
             content: "";
@@ -406,6 +410,7 @@ header#main {
   .fix-menu .wrap {
     justify-content: space-between;
     align-items: center;
+    max-width: none;
   }
   /*закрепление fix-menu*/
   
