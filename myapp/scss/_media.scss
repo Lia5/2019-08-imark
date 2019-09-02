@@ -523,7 +523,7 @@
             max-width: 91%;
             margin-left: 0;
             &:before {
-                top: -226px;
+                top: 87px;
                 height: 860px;
             }
             &.anim:before {
@@ -561,8 +561,16 @@
             margin-left: 0;
             &:before {
                 right: -23%;
-                top: -29%;
+                top: -9%;
                 height: 154%;
+                transition: 0.5s;
+            }
+            &.anim {
+                &:before {
+                    right: -23%;
+                    top: -29%;
+                    height: 154%;
+                }
             }
 
         }
@@ -1009,7 +1017,7 @@
         width: 100%;
     }
     .menu-toggle { 
-        top: -5px;
+        top: 3px;
         width: 83px;
         .one, .three, .two {
             margin: 7px auto;
@@ -1636,7 +1644,7 @@
         &__img {
             padding-top: 139px;
             &:before {
-                width: 77%;
+                width: 41%;
             }
             &--left {
                 height: 188px;

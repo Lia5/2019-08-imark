@@ -194,6 +194,15 @@ header#main {
     }
 
 }
+.logo {
+    width: 99px;
+    a {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+}
 .mobile.social {
     display: none;
 }
