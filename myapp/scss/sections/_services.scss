@@ -341,6 +341,10 @@
     transform: rotate(45deg);
     padding: 5px;
     margin: 5px;
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 }
 .arrow-next{
     left: calc(39% + 60px);

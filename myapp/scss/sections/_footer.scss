@@ -22,9 +22,7 @@
         line-height: 2.14;
         font-weight: 700;
         &:hover {
-            &:after {
-                border-color: #fcfcfc;
-            }
+            opacity: 0.5;
         }
     }
     &__develop {
@@ -57,11 +55,8 @@
     &__item {
         display: block;
         padding: 19px 17px 7px;
-        &:hover svg {
-            fill: $color-yellow;
-        }
         &:hover {
-            transform: scale(1.2);
+            opacity: 0.5;
         }
     }
     svg {
