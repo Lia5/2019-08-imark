@@ -887,12 +887,6 @@
                 top: 22%;
                 height: 84%;
             }
-            &__icon {
-                position: absolute;
-                bottom: auto;
-                top: 12%;
-                right: -5%;
-            }
 
         }
         .financial__dot-bottom {
@@ -1524,6 +1518,7 @@
         &__body {
             .wrap {
                 padding: 14px;
+                padding-top: 170px;
             }
             .title {
                 margin-bottom: 4px;
@@ -1603,8 +1598,16 @@
                     bottom: -99px;
                 }
             }
+            &__icon {
+                position: absolute;
+                bottom: auto;
+                top: 12%;
+                right: -5%;
+            }
+
         }
         &__reviews {
+            padding-top: 29px;
             &:before {
                 left: 0;
                 top: -5%;
