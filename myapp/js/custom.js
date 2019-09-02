@@ -167,3 +167,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 });
+
+//team btn more details
+$('.team .mark-btn').click(function(e) {
+    e.preventDefault();
+    $(this).parents('.team__item').find('.team__columns').addClass('active');
+    $(this).hide();
+});
+
