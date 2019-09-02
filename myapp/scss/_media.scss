@@ -289,7 +289,8 @@
     }
     nav {
         .logo, .nav {
-            padding-top: 30px;
+            padding-top: 27px;
+            padding-bottom: 8px;
         }
     }
     .main-submenu.mobile,
@@ -298,10 +299,11 @@
     }
     .menu-toggle {
         display: block;
-        width: 87px;
-        height: 84px;padding: 30px;
+        width: 76px;
+        height: 73px;
+        padding: 21px;
         position: absolute;
-        top: 6px;
+        top: 9px;
         right: 47px;
         cursor: pointer;
         z-index: 5;
@@ -550,6 +552,7 @@
         overflow: initial;
         padding-top: 62px;
         padding-bottom: 0;
+        background: transparent;
         .wrap {
             flex-direction: column-reverse;
         }
@@ -1321,7 +1324,7 @@
         &__dot-top {
             top: -4%;
             bottom: auto;
-            right: -12%;
+            right: 0;
             left: auto;
             &:after {
                 width: 22px;
@@ -1380,6 +1383,10 @@
         &__map {
             width: calc(100% + 90px);
             margin-left: -45px;
+            top: 0;
+            &.anim {
+                top: 0;
+            }
         }
         &__info {
             width: 100%;
@@ -1693,6 +1700,14 @@
         }
     }
     
+}
+@media only screen and (max-width: 480px) {
+    .contacts__img--right {
+        right: -10%;
+    }
+    .financial__dot-top {
+        right: -12%;
+    }
 }
 @media only screen and (max-width: 374px) {
     body {

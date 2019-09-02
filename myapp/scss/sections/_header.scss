@@ -84,9 +84,9 @@ nav {
 
 
 header {
-    min-height: 90px;
+    // min-height: 90px;
     background: #F8F8F8;
-    padding: 0 50px 19px 53px;
+    padding: 0 50px 0 53px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -101,6 +101,7 @@ header#main {
     // min-height: 900px;  
 }
 .header {
+    height: 100%;
     position: relative;
     flex-grow: 1;
     align-items: center;
