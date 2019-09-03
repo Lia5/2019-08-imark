@@ -447,7 +447,9 @@
         padding-left: 25px;
         padding-right: 25px;
     }
-    
+    .lang__current:hover {
+        border-color: transparent;
+    }
     header {
         padding: 0 24px 19px 17px;
         // min-height: 1023px;
