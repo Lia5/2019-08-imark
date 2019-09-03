@@ -21,6 +21,12 @@
         font-size: 14px;
         line-height: 2.14;
         font-weight: 700;
+        a {
+            color: #FCFCFC;
+            font-size: 14px;
+            line-height: 2.14;
+            font-weight: 700;
+        }
         &:hover {
             opacity: 0.5;
         }
@@ -40,17 +46,22 @@
     }
     &--tel {
         padding-left: 19%;
+       
     }
+    &__tel {
+        display: flex;
+    } 
     .social {
         // padding-right: 17%;
         position: relative;
         top: -2px;
     }
 }
-.rights {
+.rights p {
     font-size: 12px;
     line-height: 2.5;
     color: #C4C4C4;
+    margin-bottom: 0;
 }
 .social {
     display: flex;

@@ -1,6 +1,6 @@
 .services {
     overflow: hidden;
-    .subtitle {
+    h3 {
         max-width: 451px;
     }
     .main-submenu {
@@ -193,11 +193,12 @@
             }
         }
     }
-    &__subtitle {
+    &__subtitle h3 {
         font-size: 22px;
         line-height: 30px;
         font-weight: 700;
         margin-bottom: 25px;
+        margin-top: 0;
     }
     .financial {
         z-index: 0;
@@ -246,7 +247,8 @@
         flex-direction: column;
         padding-bottom: 115px;
         width: 30%;
-        &-title {
+        &-title h4 {
+            margin: 0;
             padding-top: 36px;
             font-size: 48px;
             line-height: 100px;
@@ -260,7 +262,7 @@
             width: 209px;
         }
     }
-    .primary-text {
+    p {
         margin-bottom: 60px;
     }
     .individual__icon {
@@ -319,7 +321,7 @@
         &-slider {
             padding-top: 30px;
         }
-        .title {
+        h2 {
             position: relative;
             padding: 19px 0;
             margin-bottom: 90px;
@@ -378,12 +380,13 @@
                 background-size: 100%;
 
             }
-            .primary-text {
+            p {
                 margin-top: 30px;
             }
         }
-        &-name {
+        &-name p {
             margin-top: 50px;
+            margin-bottom: 0;
             text-transform: uppercase;
             font-weight: 700;
             font-size: 16px;

@@ -6,12 +6,16 @@
         display: flex;
     }
     &__title {
+
         position: relative;
         margin: 0 0 48px 0;
         color: #ffffff;
-        font-size: 40px;
-        line-height: 1.5;
-        text-transform: uppercase;
+
+        p {
+            font-size: 40px;
+            line-height: 1.5;
+            text-transform: uppercase;            
+        }
         span {
             display: block;
             font-weight: 700;

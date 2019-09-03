@@ -2,7 +2,7 @@ section.contacts.pagecontacts
     .wrap
         .contacts__body
             .contacts__info(data-anim="contactanim")
-                h2.title Наши контакты
+                h2 Наши контакты
                 .contacts__text 
                     p Всегда рады Вам!
                     p Звоните, пишите и заходите в гости:
@@ -26,7 +26,7 @@ section.contacts.pagecontacts
     .contacts__form
         .wrap
             .contacts__form-wrap
-                h2.title Написать нам:
+                h2 Написать нам:
                 form(action="#")
                     .form-line
                         input(type='text', name='name', placeholder="Ваше имя:", required)
@@ -34,8 +34,9 @@ section.contacts.pagecontacts
                         input(type='email', name='email', placeholder="Ваш email:", required)
                     .form-line
                         textarea(name="text", rows="7", placeholder="Текст сообщения")
-                    .agree-line Отправляя заявку, я даю согласие на обработку персональных данных
-                    .form-line.mark-btn(data-anim="contactanimbtn")
+                    .agree-line
+                        p Отправляя заявку, я даю согласие на обработку персональных данных
+                    .form-line.mark-btn
                         span
                             input(type='submit', value='Отправить')
                     

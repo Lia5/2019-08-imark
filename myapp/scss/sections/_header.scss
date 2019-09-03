@@ -73,9 +73,16 @@ nav {
         }
     }
     &__item {
+        display: block;
         padding: 5px;
         &:hover {
             text-decoration: underline;
+        }
+        &--nothover {
+            opacity: 0.5;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
@@ -150,8 +157,7 @@ header#main {
         span {
             font-size: 60px;
             line-height: 1.6;
-           
-            
+            font-weight: 800;            
             display: block;
             text-transform: uppercase;
         }
@@ -395,7 +401,7 @@ header#main {
         top: 50%;
         transform: translate(0, -50%) ;
         left: 0;
-        animation: animationScroll 1.5s infinite;
+        // animation: animationScroll 1.5s infinite;
     }
     &:after {
         content: "";
@@ -408,7 +414,7 @@ header#main {
         transform: translate(0, -50%) rotate(45deg);
         border-left: 1px solid #3e4653;
         border-bottom: 1px solid #3e4653;
-        animation: animationScroll 1.5s infinite;
+        // animation: animationScroll 1.5s infinite;
     }
 }
 //header

@@ -2,12 +2,29 @@ $(function() {
     //lang 
     $(".lang__current").click(function (){
         $(".lang__wrap").addClass("active");
-
+        $(".lang__item").mouseenter(function() {
+            if ($(this).text() ==  $(".lang__current").text()) {
+                $(this).addClass('lang__item--nothover')
+            }
+        })
     });
+    $("body").mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".lang__wrap"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            $(".lang__wrap").removeClass("active");
+            $(".lang__item").removeClass("lang__item--nothover");
+            
+        }
+    });
+
+
     $(".lang__item").click(function (){
         var lang = $(this).text();
         $(".lang__current").text(lang);
         $(".lang__wrap").removeClass("active");
+        $(".lang__item").removeClass("lang__item--nothover");
+
     }); 
 
     $(".nav-dots a").click(function (e){
@@ -17,16 +34,16 @@ $(function() {
             scrollTop: $($div).offset().top
         }, 1000);
     });
-    $(".scroll").click(function (e){
-        e.preventDefault();
-        var $div = $(this).data('div');
-        $('html, body').animate({
-            scrollTop: $($div).offset().top
-        }, 1000);
-    });
+    // $(".scroll").click(function (e){
+    //     e.preventDefault();
+    //     var $div = $(this).data('div');
+    //     $('html, body').animate({
+    //         scrollTop: $($div).offset().top
+    //     }, 1000);
+    // });
 
     /*map*/
-    if(jQuery('.services__reviews-slider').length) {
+    if(jQuery('#map').length) {
         function initMap() {
             var centerLatLng = new google.maps.LatLng( 50.445573, 30.495504);
             var mapOptions = {

@@ -126,6 +126,11 @@
     .contacts__info {
         padding-left: 2%;
     }
+    .footer {
+        .contacts__tel {
+            margin-bottom: 0;
+        }
+    }
     .footer__left {
         flex-grow: 1;
     }
@@ -162,7 +167,7 @@
         padding-right: 30px;
         &-body {
             padding: 60px 36px 60px;
-            .primary-text {
+            p {
                 font-size: 15px;
                 line-height: 24px;
             }
@@ -208,11 +213,11 @@
             .wrap {
                 flex-wrap: wrap;
             }
-            .title {
+            h2 {
                 margin-bottom: 45px;
             }
         }
-        .subtitle {
+        h3 {
             max-width: none;
         }
         &__directions {
@@ -265,7 +270,7 @@
         }        
     }
     .services__reviews {
-        .title {
+        h2 {
             padding-left: 90px;
             &:before {
                 right: 35%;
@@ -300,13 +305,13 @@
             height: 65px;
         }     
         &__about-right {
-            .primary-text {
+            p {
                 padding-bottom: 59px;
             }
         }   
     }
     .client {
-        &__name { 
+        &__name p { 
             padding: 15px 10px;
             font-size: 16px;
             line-height: 18px;
@@ -390,6 +395,7 @@
         position: absolute;
         transform: translateX(200%);
         transition: 1s;
+        opacity: 1;
         li {
             width: 100%;
             padding-left: 65px;
@@ -401,7 +407,8 @@
             margin-left: auto;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: flex-start;
+            padding-top: 83px;
             background: #F8F8F8;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
         }
@@ -993,11 +1000,11 @@
                     left: auto;
                     right: -12%;
                 }
-                .primary-text {
+                p {
                     width: 51%;
                     padding-bottom: 0;
                 }
-                .subtitle {
+                h3 {
                     margin-bottom: 42px;
                 }
             }
@@ -1063,14 +1070,14 @@
             }
         }
         &__clients {
-            .title {
+            h2 {
                 padding-left: 0;
             }
             
         }
         .services__reviews {
             padding-top: 35px;
-            .primary-text {
+            p {
                 font-size: 18px;
                 line-height: 30px;
             }
@@ -1104,11 +1111,11 @@
     .wrap {
        padding: 0 45px;
     }
-    .title {
+    h2 {
         font-size: 36px;
         margin-bottom: 11px;
     }
-    .primary-text {
+    p {
         font-size: 14px;
         line-height: 24px;
         p {
@@ -1154,6 +1161,7 @@
         .logo {
             position: relative;
             z-index: 5;
+            padding-top: 22px;
         }
     }
     .header {
@@ -1495,7 +1503,7 @@
 
     }
     .contacts {
-        .title {
+        h2 {
             line-height: 1.1;
             margin-bottom: 36px;
         }
@@ -1601,7 +1609,7 @@
         .contacts__info {
             margin-top: 56px;
         }
-        .title {
+        h2 {
             max-width: 290px;
             margin-bottom: 48px;
         }
@@ -1637,7 +1645,7 @@
                 padding: 30px;
                 padding-top: 14px;
             }
-            .title {
+            h2 {
                 margin-bottom: 4px;
                 margin-bottom: 16px;
             }
@@ -1766,7 +1774,7 @@
                     border-bottom-width: 15px;
                 }
             }
-            .title:before {
+            h2:before {
                 right: 13%;
             }
         }  
@@ -1786,7 +1794,7 @@
             }
         } 
 
-        &__reviews .title {
+        &__reviews h2 {
             padding: 2px 0 2px 0;
             margin-bottom: 40px
         }
@@ -1808,7 +1816,7 @@
         }
     }
     .service {
-        .subtitle {
+        h3 {
             font-size: 18px;
             line-height: 25px;
         }
@@ -1839,11 +1847,11 @@
                     top: -14%;
                     bottom: auto;
                 }
-                .subtitle {
+                h3 {
                     font-size: 16px;
                     line-height: 20px;
                 }
-                .primary-text {
+                p {
                     width: 100%;
                 }
             }
@@ -1859,6 +1867,13 @@
             }
         }
     }
+    .client {
+        &__name p { 
+            padding: 9px 7px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
     .slick-arrow {
         top: -109px;
         left: auto;
@@ -1869,7 +1884,7 @@
         right: 60px;
         right: 30%;
     }
-    .subtitle {
+    h3 {
         font-size: 14px;
         line-height: 24px;
     }
@@ -1896,7 +1911,7 @@
             }
         }
         &__reviews {
-            .title {
+            h2 {
                 padding: 2px 0 2px 30px;
             }
             .industrial__dot-top {
@@ -1911,7 +1926,7 @@
                 }
                 &:after {
                     top: 14px;
-                    left: 8px;
+                    left: 10px;
                     width: 20px;
                     border-top-width: 10px;
                     border-bottom-width: 10px;
@@ -1934,7 +1949,6 @@
                 bottom: -23%;
                 height: 49%;
             }
-
         }
         &__logo {
             margin-bottom: 14px;
@@ -1944,7 +1958,7 @@
         }
         &__item {
             margin: 41px 0 25px;
-            .subtitle {
+            h3 {
                 font-size: 17px;
                 line-height: 24px;
             }
@@ -1972,14 +1986,21 @@
             }
         }
         &__clients {
-            .title {
+            h2 {
                 line-height: 54px;
             }
            
         }
-        .services__reviews .primary-text {
+        .services__reviews p {
             font-size: 15px;
             line-height: 22px;
+        }
+    }
+    .client {
+        &__name p { 
+            padding: 6px 5px;
+            font-size: 8px;
+            line-height: 10px;
         }
     }
 }
@@ -1999,10 +2020,6 @@
         }
     }
     .main-menu {
-        top: 80px;
-        &.active {
-            top: 80px;
-        }
         li {
             padding-left: 35px;
         }
@@ -2047,7 +2064,6 @@
         }
     }
     .footer {
-        margin-top: -50px;
         .contacts__tel {
             color: #fcfcfc;
             font-size: 12px;
@@ -2068,7 +2084,7 @@
         font-size: 10px;
         line-height: 1.5;
     }
-    .services__reviews .title:before {
+    .services__reviews h2:before {
         right: 6%;
     }
     .slick-arrow {
