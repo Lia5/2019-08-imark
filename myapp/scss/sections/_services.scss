@@ -36,7 +36,7 @@
     }
     &__directions {
         width: 47%;
-        padding: 34px 65px 20px;
+        padding: 124px 65px 20px 123px;
         .main-submenu {
             a:after {
                 right: auto;
@@ -109,6 +109,7 @@
     }
 
     &__img {
+        padding-top: 90px;
         width: 50%;
         display: flex;
         justify-content: space-between;
@@ -217,7 +218,7 @@
         &__block {
             margin-right: auto;
             margin-left: auto;
-            margin-top: 12%;
+            margin-top: 11%;
         }
         &__dot-bottom {
             bottom: auto;
@@ -287,9 +288,11 @@
     .industrial__icon {
         position: static;
         transform: none;
+        margin-bottom: 5px;
     }
     .financial__icon {
         position: static;
+        margin-top: -10px;
     }
     .financial__img .financial__dot-bottom {
         top: auto;
@@ -320,6 +323,7 @@
             position: relative;
             padding: 19px 0;
             margin-bottom: 90px;
+            z-index: 1;
             &:before {
                 content: "";
                 position: absolute;
@@ -401,6 +405,7 @@
     transform: rotate(45deg);
     padding: 5px;
     margin: 5px;
+    z-index: 1;
     &:hover {
         opacity: 0.5;
         cursor: pointer;

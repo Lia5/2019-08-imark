@@ -339,12 +339,16 @@ header#main {
 
     }
     li {
-        &:nth-child(1) a {
-            background: #F8F8F8;
-            border-color:  #E8E8E8;
-            border-width: 1px;
+        a.active {
             width: 11px;
             height: 11px;
+        }
+        &:nth-child(1) a {
+            background: #F8F8F8;
+            &.active {
+                border-color:  #E8E8E8;
+                border-width: 1px;
+            }
         }
         &:nth-child(2) a {
             background:  #222222;
@@ -354,6 +358,10 @@ header#main {
         }
         &:nth-child(4) a {
             background: $color-yellow;
+            &.active {
+                border-color:  #ffb302;
+                border-width: 1px;
+            }
         }
         &:nth-child(5) a {
             background: $color-blue;

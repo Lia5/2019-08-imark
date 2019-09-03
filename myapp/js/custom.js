@@ -175,3 +175,24 @@ $('.team .mark-btn').click(function(e) {
     $(this).hide();
 });
 
+//scroll animation dots
+jQuery(window).scroll(function(){
+    var $sections = $('.section_scroll');
+    $sections.each(function(i,el){
+        var top  = $(el).offset().top-100;
+        var bottom = top +$(el).height();
+        var scroll = $(window).scrollTop();
+        var id = $(el).attr('id');
+        if( scroll > top && scroll < bottom){
+            $('.nav-dots a.active').removeClass('active');
+            $('.nav-dots a[href="#'+id+'"]').addClass('active');
+        }
+    })
+});
+
+$(".nav-dots").on("click","a", function (event) {
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 800);
+});
+

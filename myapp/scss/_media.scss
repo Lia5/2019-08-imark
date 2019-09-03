@@ -82,6 +82,18 @@
         }
         h1 {
             max-width: 70%;
+            &:before {
+                height: 100%;
+                background-size: 100%;
+                top: -100px;
+            }
+            &.anim {
+                &:before {
+                    height: 100%;
+                    background-size: 100%;
+                    top: 0;
+                }                
+            }
         }
         .lines {
             margin: 0;
@@ -142,6 +154,23 @@
     .services .financial:before {
         height: 97%;
     }
+    .services__directions {
+        padding: 124px 65px 20px 30px
+    }
+    .services__review {
+        padding-left: 30px;
+        padding-right: 30px;
+        &-body {
+            padding: 60px 36px 60px;
+            .primary-text {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+        &-foto {
+            height: 366px;
+        }
+    }
     .service {
         .wrap {
             padding: 0 90px;
@@ -149,6 +178,11 @@
         &__about {
             &-right {
                 padding: 30px 30px 100px 30px;
+                .financial__icon, 
+                .individual__icon, 
+                .industrial__icon {
+                    right: -20%;
+                }
             }
             &-img {
                 top: 50%;
@@ -183,7 +217,7 @@
         }
         &__directions {
             width: 100%;
-            padding: 10px 0 20px;
+            padding: 82px 0 20px;
         }
         &__img {
             width: 100%;
@@ -206,13 +240,14 @@
         .financial .wrap {
             flex-direction: column-reverse;
         }
-        .directions__block {
-            width: 100%;
-        } 
         .financial__block {
             max-width: none;
             margin-left: 113px;
             width: 88%;
+            padding-bottom: 50px;
+            .individual__dot-top {
+                bottom: -10%;
+            }            
         }
         .financial {
             &:after {
@@ -225,10 +260,13 @@
                 height: 53%;
             }
         }
+        &__items {
+            padding-top: 0;
+        }        
     }
     .services__reviews {
         .title {
-            padding-left: 79px;
+            padding-left: 90px;
             &:before {
                 right: 35%;
             }
@@ -260,7 +298,12 @@
         .individual__icon {
             width: 62px;
             height: 65px;
-        }        
+        }     
+        &__about-right {
+            .primary-text {
+                padding-bottom: 59px;
+            }
+        }   
     }
     .client {
         &__name { 
@@ -270,9 +313,6 @@
         }
     }
 
-}
-@media only screen and (max-width: 1139px) {
-  
 }
 @media only screen and (max-width: 980px) {
     body.activenav {
@@ -814,15 +854,6 @@
         &__subtitle {
             margin-bottom: 31px;
         }
-        .financial__block {
-            margin-top: 0;
-            padding-top: 102px;
-            width: 81%;
-            &:before {
-                top: -25%;
-                padding-bottom: 190px;
-            }
-        }
         &__img {
             &--left {
                 height: 388px;
@@ -873,37 +904,51 @@
             min-width: 45%;
             height: 370px;
         }
-        .financial__img {
-            margin-top: 33px;
-            right: auto;
-            left: -5%;
-            img {
-                max-height: 457px;
-                width: auto;
-            }
-            &:after {
-                left: 9%;
-                bottom: -130px;
 
-            }
-            .financial__dot-bottom {
-                bottom: -14%;
-                left: auto;
-                right: 21%;
-            }
-        }
         .financial {
             padding-bottom: 190px;
+            &__block {
+                margin-top: 0;
+                padding-top: 102px;
+                width: 81%;
+                margin-left: 21%;
+                padding-bottom: 0px;
+                &:before {
+                    left: -95px;
+                    top: -25%;
+                    padding-bottom: 190px;
+                }
+            }
             &:after {
-                top: 22%;
+                top: 19%;
                 height: 84%;
+            }
+            &__img {
+                margin-top: 33px;
+                right: auto;
+                left: -5%;
+                img {
+                    max-height: 457px;
+                    width: auto;
+                }
+                &:after {
+                    left: 9%;
+                    bottom: -130px;
+
+                }
+                .financial__dot-bottom {
+                    bottom: -14%;
+                    left: auto;
+                    right: 21%;
+                }
+            }
+            &__dot-bottom {
+                top: 23%;
+                left: 62%;
             }
 
         }
-        .financial__dot-bottom {
-            top: 23%;
-            left: 62%;
-        }
+
         &__reviews {
             &-slider {
                 padding-top: 8px;
@@ -916,8 +961,8 @@
                     border-width: 30px;
                 }
                 &:after {
-                    top: -4px;
-                    left: -41px;
+                    top: -7px;
+                    left: -43px;
                     width: 26px;
                     border-width: 13px;
                 }
@@ -937,7 +982,10 @@
     .service {
         &__about {
             flex-wrap: wrap;
+            padding-top: 50px;
             &-right {
+                padding: 50px 19px 90px 49px;
+                width: 104%;
                 margin-left: -90px;
                 .individual__icon {
                     left: auto;
@@ -945,16 +993,29 @@
                 }
                 .primary-text {
                     width: 51%;
+                    padding-bottom: 0;
+                }
+                .subtitle {
+                    margin-bottom: 42px;
                 }
             }
+            &-left {
+                max-width: 100%;
+                padding: 120px 0 52px 0;
+            }
             &-img {
-                right: -6%;
+                right: -17%;
+                top: 38%;
+                &:before {
+                    top: 51%;
+                }
             }
         }
         &__part {
             width: 100%;
         }
         &__body {
+            margin-top: 220px;
             .wrap {
                 flex-wrap: wrap;
             }
@@ -962,6 +1023,7 @@
                 content: none;
             }
             &-left {
+                padding-left: 0;
                 position: relative;
                 z-index: 1;
                 &:before {
@@ -976,6 +1038,7 @@
                 }
             }
             &-right {
+                padding-left: 0;
                 z-index: 1;
                 right: -50px;
                 &:after {
@@ -987,13 +1050,30 @@
             }
         }
         &__info {
+            padding-bottom: 50px;
             .wrap {
                 flex-wrap: wrap;
             }
             &-item {
+                padding-left: 0;
                 padding-right: 0;
                 max-width: none;
             }
+        }
+        &__clients {
+            .title {
+                padding-left: 0;
+            }
+            
+        }
+        .services__reviews {
+            padding-top: 35px;
+            .primary-text {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            
+            
         }
     }
     .client {
@@ -1003,13 +1083,28 @@
     }
 
 }
+@media only screen and (max-width: 820px) {
+    .service__body {
+        margin-top: 112px;
+    }
+    .service__about-img {
+        right: -8%;
+        &:before {
+            width: 67%;
+            background-size: 100%;
+        }
+        &.anim:before {
+            left: -85%;
+        }
+    }
+}
 @media only screen and (max-width: 767px) {
     .wrap {
        padding: 0 45px;
     }
     .title {
         font-size: 36px;
-        margin-bottom: 5px;
+        margin-bottom: 11px;
     }
     .primary-text {
         font-size: 14px;
@@ -1537,11 +1632,12 @@
     .services {
         &__body {
             .wrap {
-                padding: 14px;
-                padding-top: 170px;
+                padding: 30px;
+                padding-top: 14px;
             }
             .title {
                 margin-bottom: 4px;
+                margin-bottom: 16px;
             }
         }
         .main-submenu {
@@ -1624,6 +1720,14 @@
                 top: 12%;
                 right: -5%;
             }
+            &__block {
+                &:before {
+                    left: -11px
+                }
+            }   
+            &__img img {
+                max-height: 264px;
+            } 
 
         }
         &__reviews {
@@ -1679,16 +1783,9 @@
                 }
             }
         } 
-        .financial__block {
-            &:before {
-                left: -11px
-            }
-        }   
-        .financial__img img {
-            max-height: 264px;
-        } 
+
         &__reviews .title {
-            padding: 2px 0 2px 44px;
+            padding: 2px 0 2px 0;
             margin-bottom: 40px
         }
         &__review {
@@ -1708,7 +1805,58 @@
             margin-bottom: 0;
         }
     }
-    
+    .service {
+        .subtitle {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .wrap {
+            padding: 0 15px;
+        }
+        &__about {
+            &-img {
+                top: auto;
+                bottom: -27%;
+                height: 59%;
+                &:before {
+                    top: 0%;
+                }
+            }
+            &-left {
+                padding-top: 46px;
+                padding-bottom: 70px;
+            }
+            &-right {
+                width: 91%;
+                margin-left: -15px;
+                padding: 39px 14px 90px 12px;
+                .individual__icon, .industrial__icon, .financial__icon {
+                    width: 35px;
+                    height: 39px;
+                    right: -8%;
+                    top: -14%;
+                    bottom: auto;
+                }
+                .subtitle {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .primary-text {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__body {
+            margin-top: 181px;
+            &-right {
+                right: 0;
+                &:after {
+                    left: 22%;
+                }
+            }
+        }
+    }
     .slick-arrow {
         top: -109px;
         left: auto;
@@ -1739,6 +1887,99 @@
     .financial__dot-top {
         right: -12%;
     }
+    .services {
+        &__body {
+            .wrap {
+                padding: 14px;
+            }
+        }
+        &__reviews {
+            .title {
+                padding: 2px 0 2px 30px;
+            }
+            .industrial__dot-top {
+                right: 6%;
+                top: 32%;
+                transform: rotate(90deg);
+                &:before {
+                    left: 0px;
+                    width: 40px;
+                    border-top-width: 20px;
+                    border-bottom-width: 20px;
+                }
+                &:after {
+                    top: 14px;
+                    left: 8px;
+                    width: 20px;
+                    border-top-width: 10px;
+                    border-bottom-width: 10px;
+                }
+            }
+        }
+        &__review-body {
+            padding: 17px 0 26px 16px;
+        }
+
+        &__review-name {
+            margin-top: 40px;
+        }
+    }
+    .service {
+        &__about {
+            padding-bottom: 0;
+            &-img {
+                right: -14%;
+                bottom: -23%;
+                height: 49%;
+            }
+
+        }
+        &__logo {
+            margin-bottom: 14px;
+            svg {
+                width: 40px;
+            }
+        }
+        &__item {
+            margin: 41px 0 25px;
+            .subtitle {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+        &__body-right {
+            padding-top: 18px;
+            width: 80%;
+            margin: 0 auto;
+            &:after {
+                left: 19%;
+                bottom: 0;
+            }
+            &.anim {
+                &:after {
+                    left: 19%;
+                    bottom: -20%;
+                }
+            }
+        }
+        &__info {
+            padding-top: 40px;
+            padding-bottom: 0;
+            &-item {
+                margin-bottom: 56px;
+            }
+        }
+        &__clients {
+            .title {
+                line-height: 54px;
+            }
+           
+        }
+        .services__reviews .primary-text {
+            font-size: 15px;
+            line-height: 22px;
+        }
+    }
 }
 @media only screen and (max-width: 374px) {
     body {
@@ -1753,15 +1994,6 @@
         }
         .scroll {
             right: -99px;
-        }
-    }
-    .menu-toggle {
-        width: 60px;
-        height: 60px;
-        padding: 12px;
-        top: 23px;
-        &.active {
-            top: 23px;
         }
     }
     .main-menu {
@@ -1842,6 +2074,9 @@
     }
     .arrow-prev {
         right: 23%;
+    }
+    .services__items .wrap {
+        padding: 35px 20px;
     }
 }
 @media only screen and (max-width: 413px) {
