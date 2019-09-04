@@ -34,6 +34,10 @@ $(function() {
             scrollTop: $($div).offset().top
         }, 1000);
     });
+// 13 символов - /imark/myapp/   console.log(window.location.pathname.slice(13));
+    $('.main-menu li > a[href="' + window.location.pathname.slice(13) + '"]').addClass('active');
+
+
     // $(".scroll").click(function (e){
     //     e.preventDefault();
     //     var $div = $(this).data('div');

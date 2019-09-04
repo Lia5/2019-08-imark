@@ -13,21 +13,25 @@
         max-width: 300px;
         margin-bottom: 48px;
     }
+    .contacts__tel {
+        top: 2px;
+    }
     &__tel {
         position: relative;
         margin-right: 31px;
         color: #222222;
         white-space: nowrap;
         &:hover {
-            &:after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                border-bottom: 2px solid #222222;;
-            }
+            opacity: 0.5;
+            // &:after {
+            //     content: "";
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 1px;
+            //     border-bottom: 2px solid #222222;;
+            // }
         }
     }
     &__tel-wrap {
@@ -207,24 +211,53 @@
 .form-line {
     margin-bottom: 20px;
     &.mark-btn {
-        text-transform: uppercase;
         margin-left: auto;
         display: block;
         max-width: 209px;
         margin-bottom: 0;
-        font-weight: 700;
         top: 0;
         input, button {
             font-weight: 700;
             text-transform: uppercase;
-            padding: 0;
-            background: transparent;
-            
+            font-family: $rubik;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 18px 38px 18px 18px;
+            transition: background-color 0.3s, transform 0.3s, top 1.3s;
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid #222222;
+            min-width: 209px;
+            text-align: center;
         }
+        &:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 8px;
+			height: 8px;
+			top: 50%;
+			right: 30px;
+			transform: translate(0, -50%) rotate(45deg);
+			border-right: 2px solid #3e4653;
+			border-top: 2px solid #3e4653;
+			transition: 0.5s;
+		}
         &:hover {
-            input, button {
-                color: #fff;
-            }
+		
+                
+                transform: scale(1.05);
+                input, button {
+                    background-color: #545454;
+                    color: #fff;
+                }
+                &:after {
+                    border-color: #fff;
+                }
         }
     }
 }

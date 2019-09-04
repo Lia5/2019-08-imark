@@ -123,6 +123,9 @@
     .contacts__tel {
         margin-bottom: 10px;
     }
+    .contacts .contacts__tel {
+        top: -2px;
+    }
     .contacts__info {
         padding-left: 2%;
     }
@@ -424,6 +427,7 @@
             transform: translateX(0);
         }
         a {
+            display: inline-block;
             font-size: 24px;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -445,8 +449,15 @@
         }
         .main-submenu {
             a {
+                display: block;
                 font-size: 18px;
                 text-transform: initial;
+                &:before  {
+                    left: 28px;
+                    width: 122px;
+                    margin-right: 0;
+                    transform: none;
+                }
             }
         }
     }

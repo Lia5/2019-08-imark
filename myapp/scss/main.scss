@@ -121,22 +121,26 @@ h2 {
 	margin: 0 0 25px 0;
 }
 .mark-btn {
-	font-family: $rubik;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 30px;
 	position: relative;
-	display: inline-block;
-	text-transform: uppercase;
-    padding: 18px 38px 18px 18px;
-	transition: background-color 0.3s, transform 0.3s, top 1.3s;
-	cursor: pointer;
-	background-color: transparent;
-	border: 1px solid #222222;
-	min-width: 209px;
-	text-align: center;
 	top: 50px;
-	span {
+	min-width: 209px;
+	display: inline-block;
+	transition: 0.5s;
+	a, input, button {
+		font-family: $rubik;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 30px;
+		position: relative;
+		display: inline-block;
+		text-transform: uppercase;
+		padding: 18px 38px 18px 18px;
+		transition: background-color 0.3s, transform 0.3s, top 1.3s;
+		cursor: pointer;
+		background-color: transparent;
+		border: 1px solid #222222;
+		min-width: 209px;
+		text-align: center;
 		position: relative;
 		&:after {
 			content: "";
@@ -145,7 +149,7 @@ h2 {
 			width: 8px;
 			height: 8px;
 			top: 50%;
-			right: -15px;
+			right: 30px;
 			transform: translate(0, -50%) rotate(45deg);
 			border-right: 2px solid #3e4653;
 			border-top: 2px solid #3e4653;
@@ -155,9 +159,10 @@ h2 {
 
 	&:hover {
 		
-		background-color: #545454;
+		
 		transform: scale(1.05);
 		a {
+			background-color: #545454;
 			color: #fff;
 			&:after {
 				border-color: #fff;

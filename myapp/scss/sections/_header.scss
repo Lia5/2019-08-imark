@@ -255,6 +255,20 @@ header#main {
                 width: 73%;
             }
         }
+        &.active {
+            &:before {
+            content: "";
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, 0);
+            width: 85%;
+            height: 1px;
+            border-bottom: 1px solid #545454;
+            transition: 0.5s;
+        }
+        }
     }
 
 
